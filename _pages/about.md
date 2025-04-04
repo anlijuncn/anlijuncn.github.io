@@ -21,7 +21,7 @@ I am currently a postdoctoral researcher (supervisor: <a href="https://portal.re
 
 My research interests are neurodegenerative diseases. I aim to develop cutting-edge machine learning and statistical methods for analyzing multi-omics data (e.g., imageomics, proteomics, and genomics) to deepen our understanding of the biological mechanisms underlying neurodegenerative diseases.
 
-​I have published 10+ papers in top journals, including Nature Neuroscience, Science Advances, PNAS, and Medical Image Analysis, with latest <a href='https://scholar.google.com/citations?user=La_luGsAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
+​I have published 10+ papers in top journals, including *Nature Neuroscience*, *Science Advances*, *PNAS*, and *Medical Image Analysis*, with latest <a href='https://scholar.google.com/citations?user=La_luGsAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
 # 🔥 News
 <div class="news-ticker">
