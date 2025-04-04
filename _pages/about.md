@@ -17,17 +17,18 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-<p>I am currently a postdoctoral researcher (supervisor: <a href="https://portal.research.lu.se/en/persons/jacob-vogel">Jacob Vogel</a>) at Lund University, working within the <a href="https://biofinder.se/">BioFINDER community</a>. Before moving to Sweden, I completed my Ph.D. in Singapore under the supervision of <a href="https://sites.google.com/view/yeolab/thomas">Thomas Yeo</a>.</p> 
+<p>I am currently a postdoctoral researcher (supervisor: <a href="https://portal.research.lu.se/en/persons/jacob-vogel">Jacob Vogel</a>) at Lund University, working within the <a href="https://biofinder.se/">BioFINDER community</a>. Before moving to Sweden, I completed my Ph.D. in Singapore under the supervision of <a href="https://sites.google.com/view/yeolab/thomas">Thomas Yeo</a>.</p><br>
 
 <p>My research focuses on <span style="color:red; font-weight:bold;">neurodegenerative diseases</span>, with an emphasis on developing <span style="color:blue; font-weight:bold;">machine learning</span> models to analyze <span style="color:blue; font-weight:bold;">multiomics</span> data, including imageomics, proteomics, and genomics. My research aims to:</p> 
  <ol class="compact-list">
    <li>Improve diagnostic accuracy using accessible data;</li>
    <li>Understand the biological mechanisms underlying neurodegeneration;</li>
    <li>Develop ready-to-use research/clinical toolkits.</li>
- </ol><br><br>
+ </ol><br>
 
 ​<p>I have published 10+ peer-reviewed articles in leading journals, including *Nature Neuroscience*, *Science Advances*, *PNAS*, and *Medical Image Analysis*. My works can be found at <a href='https://scholar.google.com/citations?user=La_luGsAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.</p> 
 
+---
 # 🔥 News
 <div class="news-ticker">
   <div class="ticker-wrap">
@@ -38,14 +39,13 @@ redirect_from:
   </div>
 </div>
 
-
+---
 # 🎓 Education 
 - 2019.01 - 2024.01, Ph.D., National University of Singapore, Singapore. 
 - 2014.09 - 2018.06, BEng, Harbin Institute of Technology, China. 
  
-
+---
 # 📝 Selected Publications 
-
 - **An, L.**, Zhang, C., Wulan, N., Zhang, S., Chen, P., Ji, F., ... & Yeo, B. T. (2025). DeepResBat: deep residual batch harmonization accounting for covariate distribution differences. *Medical Image Analysis*, 99, 103354. [[HTML]](https://doi.org/10.1016/j.media.2024.103354) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/An_2025_MedIA.pdf) [[PDF]](/pdf/An_2025_MedIA.pdf)
 
 - Chen, P., **An, L.**, Wulan, N., Zhang, C., Zhang, S., Ooi, L. Q. R., ... & Yeo, B. T. (2024). Multilayer meta-matching: Translating phenotypic prediction models from multiple datasets to small data. *Imaging neuroscience*, 2, 1-22. [[HTML]](https://doi.org/10.1162/imag_a_00233) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/Chen_2024_ImagN.pdf) [[PDF]](/pdf/Chen_2024_ImagN.pdf)
