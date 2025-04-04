@@ -49,7 +49,7 @@ My research interests are neurodegenerative diseases. I aim to develop cutting-e
 
 - **An, L.**, Chen, J., Chen, P., Zhang, C., He, T., Chen, C., ... & Alzheimer's Disease Neuroimaging Initiative. (2022). Goal-specific brain MRI harmonization. *NeuroImage*, 263, 119570. [[HTML]](https://doi.org/10.1016/j.neuroimage.2022.119570) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/An_2022_NeuroImage.pdf) [[PDF]](/pdf/An_2022_NeuroImage.pdf)
 
-- He, T., **An, L.**, Chen, P., Chen, J., Feng, J., Bzdok, D., ... & Yeo, B. T. (2022). Meta-matching as a simple framework to translate phenotypic predictive models from big to small data. *Nature neuroscience*, 25(6), 795-804. [[HTML]](https://doi.org/10.1016/j.neuroimage.2022.119570) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/He_2022_NN.pdf) [[PDF]](/pdf/He_2022_NN.pdf) 
+- He, T., **An, L.**, Chen, P., Chen, J., Feng, J., Bzdok, D., ... & Yeo, B. T. (2022). Meta-matching as a simple framework to translate phenotypic predictive models from big to small data. *Nature neuroscience*, 25(6), 795-804. [[HTML]](https://doi.org/10.1038/s41593-022-01059-9) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/He_2022_NN.pdf) [[PDF]](/pdf/He_2022_NN.pdf) 
 
 
   
