@@ -119,7 +119,7 @@ h1:before, .anchor:before {
 .ticker-wrap {
   display: flex;
   flex-direction: column;
-  height: 6rem; /* 每个新闻项高度为3rem，显示2个项 */
+  height: 3rem; /* 每个新闻项的高度 */
   overflow: hidden;
   position: relative;
 }
@@ -150,4 +150,5 @@ h1:before, .anchor:before {
 .news-ticker:hover .ticker-move {
   animation-play-state: paused;
 }
+
 
