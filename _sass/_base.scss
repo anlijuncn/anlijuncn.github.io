@@ -22,12 +22,22 @@
     }
   }
   
-  h1, h2, h3, h4, h5, h6 {
-    margin: 1em 0 0.5em;
-    line-height: 1.2;
-    font-family: 'Noto Sans';
-    font-weight: bold;
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.4;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;   // 约等于 24px（默认太大了）
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3rem;
+  margin-top: 2.5rem;
+}
+
   
   h1 {
     // margin: 4em 0 0.5em;
