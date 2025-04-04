@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Lijun An"
-  avatar           : "images/android-chrome-512x512.png"
+  avatar           : "images/circular_avatar_adjusted.png"
   bio              : "Postdoctoral Fellow, Lund University"
   location         : "Lund, Sweden"
   googlescholar    : "https://scholar.google.com/citations?user=La_luGsAAAAJ"
