@@ -43,7 +43,13 @@ My research interests are neurodegenerative diseases. I aim to develop cutting-e
 
 - **An, L.**, Zhang, C., Wulan, N., Zhang, S., Chen, P., Ji, F., ... & Yeo, B. T. (2025). DeepResBat: deep residual batch harmonization accounting for covariate distribution differences. *Medical Image Analysis*, 99, 103354. [[HTML]](https://doi.org/10.1016/j.media.2024.103354) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/An_2024_MedIA.pdf) [[PDF]](/pdf/An_2024_MedIA.pdf)
 
+- Chen, P., **An, L.**, Wulan, N., Zhang, C., Zhang, S., Ooi, L. Q. R., ... & Yeo, B. T. (2024). Multilayer meta-matching: Translating phenotypic prediction models from multiple datasets to small data. *Imaging neuroscience*, 2, 1-22. [[HTML]](https://doi.org/10.1162/imag_a_00233) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/Chen_2024_ImagN.pdf) [[PDF]](/pdf/Chen_2024_ImagN.pdf)
+
+- Wulan, N., **An, L.**, Zhang, C., Kong, R., Chen, P., Bzdok, D., ... & Yeo, B. T. (2024). Translating phenotypic prediction models from big to small anatomical MRI data using meta-matching. *Imaging Neuroscience*, 2, 1-21. [[HTML]](https://doi.org/10.1162/imag_a_00251) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/Wulan_2024_ImagN.pdf) [[PDF]](/pdf/Wulan_2024_ImagN.pdf)
+
 - **An, L.**, Chen, J., Chen, P., Zhang, C., He, T., Chen, C., ... & Alzheimer's Disease Neuroimaging Initiative. (2022). Goal-specific brain MRI harmonization. *NeuroImage*, 263, 119570. [[HTML]](https://doi.org/10.1016/j.neuroimage.2022.119570) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/An_2022_NeuroImage.pdf) [[PDF]](/pdf/An_2022_NeuroImage.pdf)
+
+- He, T., **An, L.**, Chen, P., Chen, J., Feng, J., Bzdok, D., ... & Yeo, B. T. (2022). Meta-matching as a simple framework to translate phenotypic predictive models from big to small data. *Nature neuroscience*, 25(6), 795-804. [[HTML]](https://doi.org/10.1016/j.neuroimage.2022.119570) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/He_2022_NN.pdf) [[PDF]](/pdf/He_2022_NN.pdf) 
 
 
   
