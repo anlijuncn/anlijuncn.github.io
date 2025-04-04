@@ -19,7 +19,7 @@ redirect_from:
 
 I am currently a postdoctoral researcher (supervisor: <a href="https://portal.research.lu.se/en/persons/jacob-vogel">Jacob Vogel</a>) at Lund University, working within the <a href="https://biofinder.se/">BioFINDER community</a>. Before moving to Sweden, I completed my Ph.D. in Singapore under the supervision of <a href="https://sites.google.com/view/yeolab/thomas">Thomas Yeo</a>.<br><br>
 
-My research focuses on <span style="color:#c0392b; font-weight:bold;">neurodegenerative diseases</span>, with an emphasis on developing <span style="color:#1f6feb; font-weight:bold;">machine learning</span> models to analyze <span style="color:#2e7d32; font-weight:bold;">multiomics</span> data, including imageomics, proteomics, and genomics. My research aims to: 
+My research focuses on <span style="color:red; font-weight:bold;">neurodegenerative diseases</span>, with an emphasis on developing <span style="color:blue; font-weight:bold;">machine learning</span> models to analyze <span style="color:blue; font-weight:bold;">multiomics</span> data, including imageomics, proteomics, and genomics. My research aims to: 
 <ol class="compact-list">
   <li>Improve diagnostic accuracy using accessible data;</li>
   <li>Understand the biological mechanisms underlying neurodegeneration;</li>
