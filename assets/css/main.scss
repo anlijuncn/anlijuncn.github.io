@@ -110,7 +110,7 @@ h1:before, .anchor:before {
 
 
 .news-ticker {
-  height: 3rem; /* 根据需要设置容器高度 */
+  height: 3rem; /* 容器高度，可根据需要调整 */
   overflow: hidden;
   position: relative;
   background-color: #f2f2f2; /* 背景颜色，可根据需要修改 */
@@ -122,6 +122,7 @@ h1:before, .anchor:before {
   padding: 0;
   margin: 0;
   position: absolute;
+  top: 0;
   animation: scrollUp 10s linear infinite;
 }
 
@@ -141,7 +142,7 @@ h1:before, .anchor:before {
   }
 }
 
-/* 当鼠标悬停时暂停滚动 */
+/* 鼠标悬停时暂停滚动 */
 .news-ticker:hover ul {
   animation-play-state: paused;
 }
