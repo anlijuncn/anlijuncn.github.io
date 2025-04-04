@@ -24,15 +24,15 @@ My research interests are neurodegenerative diseases. I aim to develop cutting-e
 
 
 # 🎓 Education 
-- *2019.01 - 2024.01*, Ph.D., Department of Electrical and Computer Engineering, National University of Singapore, Singapore. 
-- *2014.09 - 2018.06*, BEng, School of Electrical Engineering, Harbin Institute of Technology, China. 
+- 2019.01 - 2024.01, Ph.D., National University of Singapore, Singapore. 
+- 2014.09 - 2018.06, BEng, Harbin Institute of Technology, China. 
  
 
 # 📝 Selected Publications 
 
-- **An, L.**, Zhang, C., Wulan, N., Zhang, S., Chen, P., Ji, F., ... & Yeo, B. T. (2025). DeepResBat: deep residual batch harmonization accounting for covariate distribution differences. Medical Image Analysis, 99, 103354. [[HTML]](https://doi.org/10.1016/j.media.2024.103354) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/An_2024_MedIA.pdf) [[PDF]](/pdf/An_2024_MedIA.pdf)
+- **An, L.**, Zhang, C., Wulan, N., Zhang, S., Chen, P., Ji, F., ... & Yeo, B. T. (2025). DeepResBat: deep residual batch harmonization accounting for covariate distribution differences. *Medical Image Analysis*, 99, 103354. [[HTML]](https://doi.org/10.1016/j.media.2024.103354) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/An_2024_MedIA.pdf) [[PDF]](/pdf/An_2024_MedIA.pdf)
 
-- **An, L.**, Chen, J., Chen, P., Zhang, C., He, T., Chen, C., ... & Alzheimer's Disease Neuroimaging Initiative. (2022). Goal-specific brain MRI harmonization. NeuroImage, 263, 119570. [[HTML]](https://doi.org/10.1016/j.neuroimage.2022.119570) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/An_2022_NeuroImage.pdf) [[PDF]](/pdf/An_2022_NeuroImage.pdf)
+- **An, L.**, Chen, J., Chen, P., Zhang, C., He, T., Chen, C., ... & Alzheimer's Disease Neuroimaging Initiative. (2022). Goal-specific brain MRI harmonization. *NeuroImage*, 263, 119570. [[HTML]](https://doi.org/10.1016/j.neuroimage.2022.119570) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/An_2022_NeuroImage.pdf) [[PDF]](/pdf/An_2022_NeuroImage.pdf)
 
 
   
