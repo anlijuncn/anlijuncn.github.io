@@ -107,3 +107,45 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+
+
+.news-ticker {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f2f2f2; /* 背景颜色，可根据需要修改 */
+  border: 1px solid #ccc; /* 边框，可根据需要修改 */
+  box-sizing: border-box;
+}
+
+.ticker-content {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 100%;
+  animation: ticker-scroll 10s linear infinite;
+}
+
+.ticker-content ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.ticker-content li {
+  display: inline;
+  padding: 0 2rem;
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* 当鼠标悬停时暂停滚动 */
+.news-ticker:hover .ticker-content {
+  animation-play-state: paused;
+}
