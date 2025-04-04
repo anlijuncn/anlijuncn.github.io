@@ -24,18 +24,15 @@ My research interests are neurodegenerative diseases. I aim to develop cutting-e
 
 
 # 🎓 Education 
-- *2019.01 - 2024.01*, <a href="http://english.hust.edu.cn/"><img class="svg" src="/images/HUST_logo.svg" width="23pt"></a> Department of Electrical and Computer Engineering, National University of Singapore, Singapore. 
-- *2014.09 - 2018.06*, <a href="https://en.scu.edu.cn/"><img class="svg" src="/images/SCU_logo.svg" width="20pt"></a> School of Electrical Engineering, Harbin Institute of Technology, China. 
+- *2019.01 - 2024.01*, Ph.D., Department of Electrical and Computer Engineering, National University of Singapore, Singapore. 
+- *2014.09 - 2018.06*, BEng, School of Electrical Engineering, Harbin Institute of Technology, China. 
  
 
 # 📝 Selected Publications 
 
-- Bo Feng, Jianbo Wu, Hongming Tu, `Jian Tang`, Yihua Kang. A Review of Magnetic Flux Leakage Nondestructive Testing. *Materials*. 2022, 15(20): 7362. (JCR:Q1; IF:3.748)  
-[[HTML]](https://dx.doi.org/10.3390/ma15207362) [[Preview]](https://github.com/tangjyan/tangjyan.github.io/blob/main/pdf/FengB-2022-A%20Review%20of%20Magnetic%20Flux%20Leakage%20Nondestructive%20Testing.pdf) [[PDF]](/pdf/FengB-2022-A%20Review%20of%20Magnetic%20Flux%20Leakage%20Nondestructive%20Testing.pdf)
+- **An, L.**, Zhang, C., Wulan, N., Zhang, S., Chen, P., Ji, F., ... & Yeo, B. T. (2025). DeepResBat: deep residual batch harmonization accounting for covariate distribution differences. Medical Image Analysis, 99, 103354. [[HTML]](https://doi.org/10.1016/j.media.2024.103354) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/An_2024_MedIA.pdf) [[PDF]](/pdf/An_2024_MedIA.pdf)
 
-
-- Xin Jin, Hongbao Ma, `Jian Tang`, Yihua Kang, A Self-Adaptive Vibration Reduction Method Based on Deep Deterministic Policy Gradient (DDPG) Reinforcement Learning Algorithm. *Applied Sciences*. 2022,12(9): 9703. (JCR:Q2; IF:2.838)  
-[[HTML]](https://dx.doi.org/10.3390/app12199703) [[Preview]](https://github.com/tangjyan/tangjyan.github.io/blob/main/pdf/JinX-2022-A%20Self-Adaptive%20Vibration%20Reduction%20Method%20Based%20on%20Deep%20Deterministic%20Policy.pdf) [[PDF]](/pdf/JinX-2022-A%20Self-Adaptive%20Vibration%20Reduction%20Method%20Based%20on%20Deep%20Deterministic%20Policy.pdf)
+- **An, L.**, Chen, J., Chen, P., Zhang, C., He, T., Chen, C., ... & Alzheimer's Disease Neuroimaging Initiative. (2022). Goal-specific brain MRI harmonization. NeuroImage, 263, 119570. [[HTML]](https://doi.org/10.1016/j.neuroimage.2022.119570) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/An_2022_NeuroImage.pdf) [[PDF]](/pdf/An_2022_NeuroImage.pdf)
 
 
   
