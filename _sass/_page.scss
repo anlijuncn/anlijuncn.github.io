@@ -97,13 +97,13 @@
 
   dt {
     margin-top: 1em;
-    font-family: $serif;
+    font-family: 'Noto Sans';
     font-weight: bold;
   }
 
   dd {
     margin-left: 1em;
-    font-family: $serif;
+    font-family: 'Noto Sans';
     font-size: $type-size-6;
   }
 
@@ -184,7 +184,7 @@
   margin: 0 auto;
   padding: 2px 5px;
   color: #fff;
-  font-family: $caption-font-family;
+  font-family: 'Noto Sans';
   font-size: $type-size-7;
   background: #000;
   text-align: right;
@@ -239,7 +239,7 @@
 .page__meta {
   margin-top: 2em;
   color: mix(#fff, $gray, 25%);
-  font-family: $serif;
+  font-family: 'Noto Sans';
   font-size: $type-size-6;
 
   p {
@@ -427,7 +427,7 @@ hr {
 }
 
 .footer_copyright{
-  font-family: $sans-serif-narrow;
+  font-family: 'Noto Sans';
   margin-top: 0.5em;
   margin-bottom: 1em;
   display: flex;
