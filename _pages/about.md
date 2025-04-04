@@ -19,7 +19,7 @@ redirect_from:
 
 I am currently a postdoctoral researcher (supervisor: <a href="https://portal.research.lu.se/en/persons/jacob-vogel">Jacob Vogel</a>) at Lund University's <a href="https://biofinder.se/">BioFINDER community</a>. Before moving to Sweden, I spent five memorable years in Singapore pursuing my Ph.D. (Advisor: <a href="https://sites.google.com/view/yeolab/thomas">Thomas Yeo</a>). <br> <be> 
 
-My research interests are neurodegenerative diseases. I aim to develop cutting-edge machine learning and statistical methods for analyzing multi-omics data (e.g., imageomics, proteomics, and genomics) to deepen our understanding of the biological mechanisms underlying neurodegenerative diseases.
+My research interests are <span style="color:red; font-weight:bold;">neurodegenerative diseases</span>. I aim to develop cutting-edge <span style="color:blue; font-weight:bold;">machine learning and statistical </span> methods for analyzing <span style="color:green; font-weight:bold;">multi-omics</span> data (e.g., imageomics, proteomics, and genomics) to deepen our understanding of the biological mechanisms underlying neurodegenerative diseases.
 
 ​I have published 10+ papers in top journals, including *Nature Neuroscience*, *Science Advances*, *PNAS*, and *Medical Image Analysis*, with latest <a href='https://scholar.google.com/citations?user=La_luGsAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
