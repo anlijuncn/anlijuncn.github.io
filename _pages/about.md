@@ -19,9 +19,9 @@ redirect_from:
 
 I am currently a postdoctoral researcher (supervisor: <a href="https://portal.research.lu.se/en/persons/jacob-vogel">Jacob Vogel</a>) at Lund University, working within the <a href="https://biofinder.se/">BioFINDER community</a>. Before moving to Sweden, I completed my Ph.D. in Singapore under the supervision of <a href="https://sites.google.com/view/yeolab/thomas">Thomas Yeo</a>.<br><br>
 
-My research focuses on <span style="color:red; font-weight:bold;">neurodegenerative diseases</span>, with an emphasis on developing <span style="color:blue; font-weight:bold;">machine learning</span> models to analyze <span style="color:green; font-weight:bold;">multiomics</span> data, including imageomics, proteomics, and genomics. My work aims to improve our understanding of the biological mechanisms underlying neurodegeneration.
+My research focuses on <span style="color:red; font-weight:bold;">neurodegenerative diseases</span>, with an emphasis on developing <span style="color:blue; font-weight:bold;">machine learning</span> models to analyze <span style="color:green; font-weight:bold;">multiomics</span> data, including imageomics, proteomics, and genomics. My work aims to improve our understanding of the biological mechanisms underlying neurodegeneration.<br><br>
 
-​I have published 10+ papers in top journals, including *Nature Neuroscience*, *Science Advances*, *PNAS*, and *Medical Image Analysis*. My works can be found at <a href='https://scholar.google.com/citations?user=La_luGsAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
+​I have published 10+ peer-reviewed articles in leading journals, including *Nature Neuroscience*, *Science Advances*, *PNAS*, and *Medical Image Analysis*. My works can be found at <a href='https://scholar.google.com/citations?user=La_luGsAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
 # 🔥 News
 <div class="news-ticker">
