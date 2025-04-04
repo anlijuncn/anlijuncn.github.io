@@ -21,7 +21,7 @@ I am currently a postdoctoral researcher (supervisor: <a href="https://portal.re
 
 My research interests are neurodegenerative diseases. I aim to develop cutting-edge machine learning and statistical methods for analyzing multi-omics data (e.g., imageomics, proteomics, and genomics) to deepen our understanding of the biological mechanisms underlying neurodegenerative diseases.
 
-​I have published 10+ papers in top journals, including Nature Neuroscience, Science Advances, PNAS, and Medical Image Analysis, with <a href='https://scholar.google.com/citations?user=La_luGsAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
+​I have published 10+ papers in top journals, including Nature Neuroscience, Science Advances, PNAS, and Medical Image Analysis, with latest <a href='https://scholar.google.com/citations?user=La_luGsAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
 # 🔥 News
 <div class="news-ticker">
@@ -29,7 +29,6 @@ My research interests are neurodegenerative diseases. I aim to develop cutting-e
     <div class="ticker-move">
       <div>03/2025, I got <a href="https://www.ukbiobank.ac.uk/enable-your-research/research-analysis-platform/the-uk-biobank-platform-credits-programme" style="color: #FF6F00">￡1000 credits</a> for UKB-RAP!</div>
       <div>02/2025,  Winnie's work about <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2411245122" style="color: #FF6F00">protective role of parenthood on brain aging</a> comes out in PNAS!</div>
-      <div> </div>
     </div>
   </div>
 </div>
