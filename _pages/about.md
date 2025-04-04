@@ -27,8 +27,8 @@ My research interests are neurodegenerative diseases. I aim to develop cutting-e
 <div class="news-ticker">
   <div class="ticker-wrap">
     <div class="ticker-move">
-      <div>03/2025, I got <a href="https://www.ukbiobank.ac.uk/enable-your-research/research-analysis-platform/the-uk-biobank-platform-credits-programme" style="color: #FF6F00">￡1000 credits</a> for UKB-RAP!</div>
-      <div>02/2025,  Winnie's work about <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2411245122" style="color: #FF6F00">protective role of parenthood on brain aging</a> comes out in PNAS!</div>
+      <div>03/2025, I got <a href="https://www.ukbiobank.ac.uk/enable-your-research/research-analysis-platform/the-uk-biobank-platform-credits-programme" style="color: #FF6F00">￡1000 UKB-RAP credits!</a> </div>
+      <div>02/2025, Winnie's work about <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2411245122" style="color: #FF6F00">protective role of parenthood on brain aging</a> is out in PNAS!</div>
     </div>
   </div>
 </div>
