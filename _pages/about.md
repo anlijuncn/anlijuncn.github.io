@@ -26,9 +26,9 @@ redirect_from:
    <li>Develop ready-to-use research/clinical toolkits.</li>
  </ol><br>
 
-​<p>I have published 10+ peer-reviewed articles in leading journals, including *Nature Neuroscience*, *Science Advances*, *PNAS*, and *Medical Image Analysis*. My works can be found at <a href='https://scholar.google.com/citations?user=La_luGsAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.</p> 
+​<p>I have published 10+ peer-reviewed articles in leading journals, including *Nature Neuroscience*, *Science Advances*, *PNAS*, and *Medical Image Analysis*. My works can be found at <a href='https://scholar.google.com/citations?user=La_luGsAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.</p>
 
----
+
 # 🔥 News
 <div class="news-ticker">
   <div class="ticker-wrap">
@@ -39,12 +39,12 @@ redirect_from:
   </div>
 </div>
 
----
+
 # 🎓 Education 
 - 2019.01 - 2024.01, Ph.D., National University of Singapore, Singapore. 
 - 2014.09 - 2018.06, BEng, Harbin Institute of Technology, China. 
  
----
+
 # 📝 Selected Publications 
 - **An, L.**, Zhang, C., Wulan, N., Zhang, S., Chen, P., Ji, F., ... & Yeo, B. T. (2025). DeepResBat: deep residual batch harmonization accounting for covariate distribution differences. *Medical Image Analysis*, 99, 103354. [[HTML]](https://doi.org/10.1016/j.media.2024.103354) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/An_2025_MedIA.pdf) [[PDF]](/pdf/An_2025_MedIA.pdf)
 
