@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Lijun An"
-description              : "Homepage of Lijun An"
+description              : 
 repository               : "anlijuncn/anlijuncn.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Lijun An"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "Postdoc@Lund University"
+  bio              : "Postdoc Fellow, Lund University"
   location         : "Lund, Sweden"
   employer         : 
   pubmed           : 
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "tangjyan"
+  github           : "anlijuncn"
   google_plus      :
   keybase          :
   instagram        :
