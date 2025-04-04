@@ -41,7 +41,7 @@ My research interests are neurodegenerative diseases. I aim to develop cutting-e
 
 # 📝 Selected Publications 
 
-- **An, L.**, Zhang, C., Wulan, N., Zhang, S., Chen, P., Ji, F., ... & Yeo, B. T. (2025). DeepResBat: deep residual batch harmonization accounting for covariate distribution differences. *Medical Image Analysis*, 99, 103354. [[HTML]](https://doi.org/10.1016/j.media.2024.103354) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/An_2024_MedIA.pdf) [[PDF]](/pdf/An_2024_MedIA.pdf)
+- **An, L.**, Zhang, C., Wulan, N., Zhang, S., Chen, P., Ji, F., ... & Yeo, B. T. (2025). DeepResBat: deep residual batch harmonization accounting for covariate distribution differences. *Medical Image Analysis*, 99, 103354. [[HTML]](https://doi.org/10.1016/j.media.2024.103354) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/An_2025_MedIA.pdf) [[PDF]](/pdf/An_2025_MedIA.pdf)
 
 - Chen, P., **An, L.**, Wulan, N., Zhang, C., Zhang, S., Ooi, L. Q. R., ... & Yeo, B. T. (2024). Multilayer meta-matching: Translating phenotypic prediction models from multiple datasets to small data. *Imaging neuroscience*, 2, 1-22. [[HTML]](https://doi.org/10.1162/imag_a_00233) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/Chen_2024_ImagN.pdf) [[PDF]](/pdf/Chen_2024_ImagN.pdf)
 
