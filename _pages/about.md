@@ -17,17 +17,10 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I graduated from School of Mechanical Science and Engineering,  Huazhong University of Science and Technology, Wuhan China. with a doctor’s degree, advised by Yihua Kang and from School of Mechanical Engineering, Sichuan University, Chengdu China with a bachelor’s degree. I have published 20+ papers with 
- <a href='https://scholar.google.com/citations?user=WMkMTb4AAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
+I am currently a postdoctoral researcher (supervisor: <a href="https://portal.research.lu.se/en/persons/jacob-vogel">Jacob Vogel</a>) at Lund University's <a href="https://biofinder.se/">BioFINDER community</a>. Before moving to Sweden, I spent five memorable years in Singapore pursuing my Ph.D. (Advisor: <a href="https://sites.google.com/view/yeolab/thomas">Thomas Yeo</a>). <br> <be> 
 
-My research interest includes: 
-- Instrumentation
-- Nondestructive testing (NDT)
-- Magnetic flux leakage (MFL) detection
-- Eddy current testing (ECT)
-- Electromagnetic measurements
-- Magnetic sensors
-- Nondestructive testing equipment
+My research interests are neurodegenerative diseases. I aim to develop cutting-edge machine learning and statistical methods for analyzing multi-omics data (e.g., imageomics, proteomics, and genomics) to deepen our understanding of the biological mechanisms underlying neurodegenerative diseases. <a href='https://scholar.google.com/citations?user=La_luGsAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
+
 
 
 # 🎓 Educations 
