@@ -22,6 +22,17 @@ I am currently a postdoctoral researcher (supervisor: <a href="https://portal.re
 My research interests are neurodegenerative diseases. I aim to develop cutting-edge machine learning and statistical methods for analyzing multi-omics data (e.g., imageomics, proteomics, and genomics) to deepen our understanding of the biological mechanisms underlying neurodegenerative diseases <a href='https://scholar.google.com/citations?user=La_luGsAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
 
+# News
+<div class="news-ticker">
+  <div class="ticker-content">
+    <ul>
+      <li>新闻项 1</li>
+      <li>新闻项 2</li>
+      <li>新闻项 3</li>
+    </ul>
+  </div>
+</div>
+
 
 # 🎓 Education 
 - 2019.01 - 2024.01, Ph.D., National University of Singapore, Singapore. 
