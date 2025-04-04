@@ -24,13 +24,12 @@ My research interests are neurodegenerative diseases. I aim to develop cutting-e
 
 # News
 <div class="news-ticker">
-  <div class="ticker-content">
-    <ul>
-      <li>新闻项 1</li>
-      <li>新闻项 2</li>
-      <li>新闻项 3</li>
-    </ul>
-  </div>
+  <ul>
+    <li>新闻项 1</li>
+    <li>新闻项 2</li>
+    <li>新闻项 3</li>
+    <!-- 根据需要添加更多新闻项 -->
+  </ul>
 </div>
 
 
