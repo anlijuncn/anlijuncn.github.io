@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Lijun An"
-description              : 
+description              : ""
 repository               : "anlijuncn/anlijuncn.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -25,39 +25,11 @@ author:
   avatar           : "images/android-chrome-512x512.png"
   bio              : "Postdoctoral Fellow, Lund University"
   location         : "Lund, Sweden"
-  employer         : 
-  pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=La_luGsAAAAJ"
   email            : "lijun.an#med.lu.se"
-  researchgate     : 
-  uri              : 
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
   github           : "anlijuncn"
-  google_plus      :
-  keybase          :
-  instagram        :
-  impactstory      : 
-  lastfm           :
   linkedin         : "anlijuncn"
-  dblp             : 
   orcid            : "https://orcid.org/0000-0003-1030-4625"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : 
-  steam            :
-  tumblr           :
-  twitter          : 
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
-  wikipedia        :
-
 
 # Reading Files
 include:
