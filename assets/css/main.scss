@@ -110,40 +110,44 @@ h1:before, .anchor:before {
 
 
 .news-ticker {
-  height: 3rem; /* 容器高度，可根据需要调整 */
+  width: 100%;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+}
+
+.ticker-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 6rem; /* 每个新闻项高度为3rem，显示2个项 */
   overflow: hidden;
   position: relative;
-  background-color: #f2f2f2; /* 背景颜色，可根据需要修改 */
-  border: 1px solid #ccc; /* 边框，可根据需要修改 */
 }
 
-.news-ticker ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  animation: scrollUp 10s linear infinite;
+.ticker-move {
+  display: flex;
+  flex-direction: column;
+  animation: ticker-scroll 9s linear infinite;
 }
 
-.news-ticker li {
-  height: 3rem; /* 与 .news-ticker 的高度一致 */
+.ticker-item {
+  height: 3rem;
   line-height: 3rem;
   padding: 0 1rem;
   box-sizing: border-box;
 }
 
-@keyframes scrollUp {
+@keyframes ticker-scroll {
   0% {
-    top: 0;
+    transform: translateY(0);
   }
   100% {
-    top: -100%;
+    transform: translateY(-100%);
   }
 }
 
 /* 鼠标悬停时暂停滚动 */
-.news-ticker:hover ul {
+.news-ticker:hover .ticker-move {
   animation-play-state: paused;
 }
 
