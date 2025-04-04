@@ -110,42 +110,38 @@ h1:before, .anchor:before {
 
 
 .news-ticker {
-  width: 100%;
+  height: 3rem; /* 根据需要设置容器高度 */
   overflow: hidden;
+  position: relative;
   background-color: #f2f2f2; /* 背景颜色，可根据需要修改 */
   border: 1px solid #ccc; /* 边框，可根据需要修改 */
+}
+
+.news-ticker ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  animation: scrollUp 10s linear infinite;
+}
+
+.news-ticker li {
+  height: 3rem; /* 与 .news-ticker 的高度一致 */
+  line-height: 3rem;
+  padding: 0 1rem;
   box-sizing: border-box;
 }
 
-.ticker-content {
-  display: inline-block;
-  white-space: nowrap;
-  padding-right: 100%;
-  animation: ticker-scroll 10s linear infinite;
-}
-
-.ticker-content ul {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.ticker-content li {
-  display: inline;
-  padding: 0 2rem;
-}
-
-@keyframes ticker-scroll {
+@keyframes scrollUp {
   0% {
-    transform: translateX(100%);
+    top: 0;
   }
   100% {
-    transform: translateX(-100%);
+    top: -100%;
   }
 }
 
 /* 当鼠标悬停时暂停滚动 */
-.news-ticker:hover .ticker-content {
+.news-ticker:hover ul {
   animation-play-state: paused;
 }
