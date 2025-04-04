@@ -23,10 +23,10 @@ redirect_from:
  <ol class="compact-list">
    <li>Improve diagnostic accuracy using accessible data;</li>
    <li>Understand the biological mechanisms underlying neurodegeneration;</li>
-   <li>Develop ready-to-use research/clinical toolkits.</li>
+   <li>Build ready-to-use research/clinical toolkits.</li>
  </ol><br>
 
-​<p>I have published 10+ peer-reviewed articles in leading journals, including *Nature Neuroscience*, *Science Advances*, *PNAS*, and *Medical Image Analysis*. My works can be found at <a href='https://scholar.google.com/citations?user=La_luGsAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.</p>
+​I have published 10+ peer-reviewed articles in leading journals, including *Nature Neuroscience*, *Science Advances*, *PNAS*, and *Medical Image Analysis*. My works can be found at <a href='https://scholar.google.com/citations?user=La_luGsAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
 
 # 🔥 News
