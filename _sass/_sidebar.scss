@@ -132,7 +132,7 @@
   @include breakpoint($medium) {
     font-size: $type-size-3;
   }
-  font-family: 'Noto Sans';
+  font-family: $serif;
   font-size: $type-size-4;
 }
 
@@ -149,7 +149,7 @@
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  font-family: 'Noto Sans';
+  font-family: $serif;
   z-index: 10;
   position: relative;
   margin-left: auto;
