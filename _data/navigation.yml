@@ -1,19 +1,8 @@
 # main links links
 main:
-  - title: "About Me"
-    url: "/#about-me"
+  - title: "CV"
+    url: "https://www.dropbox.com/s/sswq7djthcg3wk5/CV_LijunAn.pdf?dl=0"
 
-  - title: "Educations"
-    url: "/#-educations"
+  - title: "BioFINDER"
+    url: "https://www.biofinder.se"
 
-  - title: "Publications"
-    url: "/#-publications"
-
-  - title: "Honors and Awards"
-    url: "/#-honors-and-awards"
-
-  - title: "Conferences"
-    url: "/#-conferences"
-
-  - title: "Internships"
-    url: "/#-internships"
