@@ -123,7 +123,7 @@ h1:before, .anchor:before {
   margin: 0;
   position: absolute;
   top: 0;
-  animation: scrollUp 10s linear infinite;
+  animation: scrollUp 5s linear infinite;
 }
 
 .news-ticker li {
@@ -146,3 +146,4 @@ h1:before, .anchor:before {
 .news-ticker:hover ul {
   animation-play-state: paused;
 }
+
