@@ -21,10 +21,10 @@ I am currently a postdoctoral researcher (supervisor: <a href="https://portal.re
 
 My research focuses on <span style="color:red; font-weight:bold;">neurodegenerative diseases</span>, with an emphasis on developing <span style="color:blue; font-weight:bold;">machine learning</span> models to analyze <span style="color:blue; font-weight:bold;">multiomics</span> data, including imageomics, proteomics, and genomics. My research aims to:
  <ol class="compact-list">
-   <li>Improve diagnostic accuracy using accessible data;</li>
-   <li>Understand the biological mechanisms underlying neurodegeneration;</li>
+   <li>Improve automated diagnosis using accessible data;</li>
+   <li>Understand the underlying biology of neurodegeneration;</li>
    <li>Build ready-to-use research/clinical toolkits.</li>
- </ol><br>
+ </ol>
 
 ​I have published 10+ peer-reviewed articles in leading journals, including *Nature Neuroscience*, *Science Advances*, *PNAS*, and *Medical Image Analysis*. My works can be found at <a href='https://scholar.google.com/citations?user=La_luGsAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.<br><br>
 
@@ -55,6 +55,24 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
 - **An, L.**, Chen, J., Chen, P., Zhang, C., He, T., Chen, C., ... & Alzheimer's Disease Neuroimaging Initiative. (2022). Goal-specific brain MRI harmonization. *NeuroImage*, 263, 119570. [[HTML]](https://doi.org/10.1016/j.neuroimage.2022.119570) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/An_2022_NeuroImage.pdf) [[PDF]](/pdf/An_2022_NeuroImage.pdf)
 
 - He, T., **An, L.**, Chen, P., Chen, J., Feng, J., Bzdok, D., ... & Yeo, B. T. (2022). Meta-matching as a simple framework to translate phenotypic predictive models from big to small data. *Nature neuroscience*, 25(6), 795-804. [[HTML]](https://doi.org/10.1038/s41593-022-01059-9) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/He_2022_NN.pdf) [[PDF]](/pdf/He_2022_NN.pdf) 
+
+<div align="center">
+  <a href="https://clustrmaps.com/site/1a2b3">
+      <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=_zQfsjUjuHvJ9mh5OBz98IxpQr51kcbnfMLkOLKXTcQ&cl=ffffff&w=a"></script>
+  </a>
+</div>
+<br><br>
+
+## 🌍 Visitor Map
+
+<div align="center" style="margin-top: 1em; margin-bottom: 2em;">
+  <a href="https://clustrmaps.com/site/1bpzy" title="Visitor Map by ClustrMaps" target="_blank" rel="noopener">
+    <img src="//www.clustrmaps.com/map_v2.png?d=_zQfsjUjuHvJ9mh5OBz98IxpQr51kcbnfMLkOLKXTcQ&cl=ffffff" 
+         alt="Visitor map" 
+         style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+  </a>
+  <p style="font-size: 0.9rem; color: #666;">Click the map to see detailed statistics</p>
+</div>
 
 
   
