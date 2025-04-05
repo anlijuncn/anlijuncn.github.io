@@ -55,21 +55,15 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
 - **An, L.**, Chen, J., Chen, P., Zhang, C., He, T., Chen, C., ... & Alzheimer's Disease Neuroimaging Initiative. (2022). Goal-specific brain MRI harmonization. *NeuroImage*, 263, 119570. [[HTML]](https://doi.org/10.1016/j.neuroimage.2022.119570) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/An_2022_NeuroImage.pdf) [[PDF]](/pdf/An_2022_NeuroImage.pdf)
 
 - He, T., **An, L.**, Chen, P., Chen, J., Feng, J., Bzdok, D., ... & Yeo, B. T. (2022). Meta-matching as a simple framework to translate phenotypic predictive models from big to small data. *Nature neuroscience*, 25(6), 795-804. [[HTML]](https://doi.org/10.1038/s41593-022-01059-9) [[Preview]](https://github.com/anlijuncn/anlijuncn.github.io/blob/main/pdf/He_2022_NN.pdf) [[PDF]](/pdf/He_2022_NN.pdf) 
-
-<div align="center">
-  <a href="https://clustrmaps.com/site/1a2b3">
-      <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=_zQfsjUjuHvJ9mh5OBz98IxpQr51kcbnfMLkOLKXTcQ&cl=ffffff&w=a"></script>
-  </a>
-</div>
 <br><br>
 
-## 🌍 Visitor Map
 
+----
 <div align="center" style="margin-top: 1em; margin-bottom: 2em;">
   <a href="https://clustrmaps.com/site/1bpzy" title="Visitor Map by ClustrMaps" target="_blank" rel="noopener">
-    <img src="//www.clustrmaps.com/map_v2.png?d=_zQfsjUjuHvJ9mh5OBz98IxpQr51kcbnfMLkOLKXTcQ&cl=ffffff" 
-         alt="Visitor map" 
-         style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="//www.clustrmaps.com/map_v2.png?d=_zQfsjUjuHvJ9mh5OBz98IxpQr51kcbnfMLkOLKXTcQ&cl=ffffff"
+         alt="Visitor map"
+         style="width: 50%; min-width: 300px; max-width: 500px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
   </a>
   <p style="font-size: 0.9rem; color: #666;">Click the map to see detailed statistics</p>
 </div>
