@@ -60,13 +60,12 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
 
 ----
 <div align="center" style="margin-top: 1em; margin-bottom: 2em;">
-  <a href="https://clustrmaps.com/site/1bpzy" title="Visitor Map by ClustrMaps" target="_blank" rel="noopener">
-    <img src="//www.clustrmaps.com/map_v2.png?d=_zQfsjUjuHvJ9mh5OBz98IxpQr51kcbnfMLkOLKXTcQ&cl=ffffff"
-         alt="Visitor map"
-         style="width: 50%; min-width: 300px; max-width: 500px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
-  </a>
-  <p style="font-size: 0.9rem; color: #666;">Click the map to see detailed statistics</p>
+  <div style="width: 30%; min-width: 300px; max-width: 500px;">
+    <script type="text/javascript" id="clustrmaps" 
+      src="//clustrmaps.com/map_v2.js?d=_zQfsjUjuHvJ9mh5OBz98IxpQr51kcbnfMLkOLKXTcQ&cl=ffffff&w=a">
+    </script>
+  </div>
+  <p style="font-size: 0.9rem; color: #666;">Click the map to see live visitor stats</p>
 </div>
-
 
   
