@@ -1,1 +1,1 @@
-Here is the folder for uploaded manuscripts.
+Here is the folder for uploaded manuscripts and CV.
