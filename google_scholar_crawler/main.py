@@ -1,23 +1,29 @@
 from scholarly import scholarly
-import jsonpickle
 import json
-from datetime import datetime
 import os
+from datetime import datetime
 
-author: dict = scholarly.search_author_id(os.environ['GOOGLE_SCHOLAR_ID'])
-scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'])
-name = author['name']
-author['updated'] = str(datetime.now())
-author['publications'] = {v['author_pub_id']:v for v in author['publications']}
-print(json.dumps(author, indent=2))
-os.makedirs('results', exist_ok=True)
-with open(f'results/gs_data.json', 'w') as outfile:
-    json.dump(author, outfile, ensure_ascii=False)
+# 获取作者基本信息和引用数
+author = scholarly.search_author_id(os.environ['GOOGLE_SCHOLAR_ID'])
+scholarly.fill(author, sections=['indices', 'counts'])
 
-shieldio_data = {
-  "schemaVersion": 1,
-  "label": "citations",
-  "message": f"{author['citedby']}",
+# 构造数据
+author_info = {
+    "name": author.get("name"),
+    "citedby": author.get("citedby"),
+    "updated": str(datetime.now())
 }
-with open(f'results/gs_data_shieldsio.json', 'w') as outfile:
-    json.dump(shieldio_data, outfile, ensure_ascii=False)
+
+# 保存结果
+os.makedirs('results', exist_ok=True)
+with open('results/gs_data.json', 'w') as f:
+    json.dump(author_info, f, ensure_ascii=False, indent=2)
+
+# 生成 shields.io JSON 数据
+shieldio_data = {
+    "schemaVersion": 1,
+    "label": "citations",
+    "message": f"{author_info['citedby']}"
+}
+with open('results/gs_data_shieldsio.json', 'w') as f:
+    json.dump(shieldio_data, f, ensure_ascii=False)
