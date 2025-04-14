@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 
 author = scholarly.search_author_id(os.environ['GOOGLE_SCHOLAR_ID'])
-scholarly.fill(author, sections=['indices', 'counts'])
+scholarly.fill(author, sections=['indices'])
 
 data = {
     "name": author.get("name"),
