@@ -26,7 +26,7 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
    <li>Build ready-to-use research/clinical toolkits.</li>
  </ol>
 
-​I have published 10+ peer-reviewed articles in leading journals, including *Nature Neuroscience*, *Science Advances*, *PNAS*, and *Medical Image Analysis*. My research works can be found at <a href='https://scholar.google.com/citations?user=La_luGsAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=Google Scholar w/ citation:"></a>.<br><br>
+​I have published 10+ peer-reviewed articles in leading journals, including *Nature Neuroscience*, *Science Advances*, *PNAS*, and *Medical Image Analysis*. My research works can be found at <a href="https://scholar.google.com/citations?user=La_luGsAAAAJ" target="_blank"><img src="https://img.shields.io/badge/Google%20Scholar-9cf?logo=google-scholar&logoColor=black&label=" alt="Google Scholar"></a>.<br><br>
 
 
 # 🔥 News
