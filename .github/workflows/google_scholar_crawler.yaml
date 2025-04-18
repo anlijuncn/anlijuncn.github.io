@@ -9,6 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 3  # Terminate if it runs longer than 3 minutes
 
     steps:
     - name: Checkout Repository
