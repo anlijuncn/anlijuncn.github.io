@@ -4,16 +4,9 @@ import json
 from datetime import datetime
 import os
 
-from scholarly import ProxyGenerator
-
-# Set up a ProxyGenerator object to use free proxies
-# This needs to be done only once per session
-pg = ProxyGenerator()
-pg.FreeProxies()
-scholarly.use_proxy(pg)
 
 author: dict = scholarly.search_author_id(os.environ['GOOGLE_SCHOLAR_ID'])
-scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'])
+scholarly.fill(author, sections=['basics', 'indices', 'counts'])
 name = author['name']
 author['updated'] = str(datetime.now())
 author['publications'] = {v['author_pub_id']:v for v in author['publications']}
