@@ -26,7 +26,7 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
    <li>Build ready-to-use research/clinical toolkits.</li>
  </ol>
 
-​I have published 10+ peer-reviewed articles in leading journals, including *Nature*, *Nature Medicine*, *Nature Neuroscience*, *Science Advances*, *PNAS*, and *Medical Image Analysis*. My research works can be found at <a href='https://scholar.google.com/citations?user=La_luGsAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=Google Scholar w/ citation:"></a>.<br><br>
+​I have published 10+ peer-reviewed articles in top journals, including *Nature*, *Nature Medicine*, *Nature Neuroscience*, *Science Advances*, *PNAS*, and *Medical Image Analysis*. My research works can be found at <a href='https://scholar.google.com/citations?user=La_luGsAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=Google Scholar w/ citation:"></a>.<br><br>
 
 
 # 🔥 News
@@ -43,7 +43,7 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
 
 # 🎓 Education 
 - 2019.01 - 2024.01, Ph.D., National University of Singapore, Singapore. 
-- 2014.09 - 2018.06, BEng, Harbin Institute of Technology, China. 
+- 2014.09 - 2018.06, B.Eng., Harbin Institute of Technology, China. 
 <br><br>
 
 # 📝 Selected Publications 
