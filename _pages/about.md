@@ -33,7 +33,8 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
 <div class="news-ticker">
   <div class="ticker-wrap">
     <div class="ticker-move">
-      <div> </div>
+      <div>                                                                                                                      </div>
+      <div> ==================================================================================================================== </div>
       <div>08/2025, Zhang Chen's work about <a href="https://doi.org/10.1002/hbm.70280" style="color: #FF6F00"> cross-dataset evaluation of dementia progression modeling </a> is out in Human Brain Mapping!</div>
       <div>07/2025, I give a talk at AAIC about our <a href="https://www.medrxiv.org/content/10.1101/2025.06.27.25330344v1" style="color: #FF6F00"> AI-proteomics project</a> </div>
       <div>07/2025, GNPC, <a href="https://www.nature.com/articles/s41591-025-03834-0" style="color: #FF6F00">the world's largest neuroproteome dataset for neurodegenerative diseases </a> is out in Nature Medicine! </div>
