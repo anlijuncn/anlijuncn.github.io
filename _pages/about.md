@@ -33,6 +33,9 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
 <div class="news-ticker">
   <div class="ticker-wrap">
     <div class="ticker-move">
+      <div>08/2025, Zhang Chen's work about <a href="https://doi.org/10.1002/hbm.70280" style="color: #FF6F00"> cross-dataset evaluation of dementia progression modeling </a> is out in Human Brain Mapping!</div>
+      <div>07/2025, I give a talk at AAIC about our <a href="https://www.medrxiv.org/content/10.1101/2025.06.27.25330344v1" style="color: #FF6F00"> AI-proteomics project</a> </div>
+      <div>07/2025, GNPC, <a href="https://www.nature.com/articles/s41591-025-03834-0" style="color: #FF6F00">the world's largest neuroproteome dataset for neurodegenerative diseases </a> is out in Nature Medicine! </div>
       <div>07/2025, Leon, Csaba & Shaoshi's work about <a href="https://www.nature.com/articles/s41586-025-09250-1" style="color: #FF6F00">balancing scanning time and sample size of fMRI experimemts</a> is out in Nature!</div>
       <div>04/2025, I got <a href="https://aaic.alz.org/" style="color: #FF6F00"> AAIC Conference Fellowship!</a> </div>
       <div>03/2025, I got <a href="https://www.ukbiobank.ac.uk/enable-your-research/research-analysis-platform/the-uk-biobank-platform-credits-programme" style="color: #FF6F00">￡1000 UKB-RAP credits!</a> </div>
