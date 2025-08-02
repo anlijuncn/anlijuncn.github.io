@@ -111,7 +111,6 @@ h1:before, .anchor:before {
 
 .news-ticker {
   width: 100%;
-  height: 12rem;
   overflow: hidden;
   background-color: #f2f2f2;
   border: 1px solid #ccc;
@@ -120,7 +119,7 @@ h1:before, .anchor:before {
 .ticker-wrap {
   display: flex;
   flex-direction: column;
-  height: 12rem; /* 每个新闻项的高度 */
+  height: 3rem;
   overflow: hidden;
   position: relative;
 }
