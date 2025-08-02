@@ -22,7 +22,7 @@ I am currently a postdoctoral researcher (supervisor: <a href="https://portal.re
 My research focuses on <span style="color:red; font-weight:bold;">neurodegenerative diseases</span>, with an emphasis on developing <span style="color:blue; font-weight:bold;">machine learning</span> models to analyze <span style="color:blue; font-weight:bold;">multiomics</span> data, including imageomics, proteomics, and genomics. My research lines are:
  <ol class="compact-list">
    <li>AutoDiag: Improve automated diagnosis using accessible data;</li>
-   <li>Mechanism**: Understand the underlying biology machanism of neurodegeneration;</li>
+   <li>BioMech: Understand the underlying biology mechanism of neurodegeneration;</li>
    <li>ToolDev: Build ready-to-use research/clinical toolkits.</li>
  </ol>
 
