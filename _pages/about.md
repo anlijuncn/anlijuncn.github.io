@@ -21,9 +21,9 @@ I am currently a postdoctoral researcher (supervisor: <a href="https://demonlab.
 
 My research focuses on <span style="color:red; font-weight:bold;">neurodegenerative diseases</span>, with an emphasis on developing <span style="color:blue; font-weight:bold;">machine learning</span> models to analyze <span style="color:blue; font-weight:bold;">multiomics</span> data, including imageomics, proteomics, and genomics. My research lines are:
  <ol class="compact-list">
-   <li>AutoDiag: Improve automated diagnosis using accessible data;</li>
-   <li>Mechanism: Understand the underlying biology mechanism of neurodegeneration and aging;</li>
-   <li>ToolDev: Build ready-to-use research/clinical toolkits.</li>
+   <li>Automated diagnosis & differential biomarker discovery;</li>
+   <li>Mechanism investigation of neurodegeneration & aging;</li>
+   <li>Research & clinical toolkit development.</li>
  </ol>
 
 ​I have published 10+ peer-reviewed articles in top journals, including *Nature*, *Nature Medicine*, *Nature Neuroscience*, *Science Advances*, *PNAS*, and *Medical Image Analysis*. My research works can be found at <a href='https://scholar.google.com/citations?user=La_luGsAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=Google Scholar w/ citation:"></a>.<br><br>
