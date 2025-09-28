@@ -19,7 +19,7 @@ redirect_from:
 
 I am currently a postdoctoral researcher (supervisor: <a href="https://demonlab.org/members/jake">Jacob Vogel</a>) at DeMON Lab, Lund University, working closely with the <a href="https://biofinder.se/">BioFINDER community</a>. Before moving to Sweden, I completed my Ph.D. at National University of Singapore under the supervision of <a href="https://sites.google.com/view/yeolab/thomas">Thomas Yeo</a>.<br><br>
 
-My research focuses on <span style="color:red; font-weight:bold;">neurodegenerative diseases</span>, with an emphasis on developing <span style="color:blue; font-weight:bold;">machine learning</span> models to analyze <span style="color:blue; font-weight:bold;">multiomics</span> data, including imageomics, proteomics, and genomics. My research lines are:
+My research focuses on <span style="color:red; font-weight:bold;">neurodegenerative diseases</span>, with an emphasis on developing <span style="color:blue; font-weight:bold;">machine learning</span> models to analyze <span style="color:blue; font-weight:bold;">multiscale, multimodal</span> data, including brain imaging, proteomics, and genomics. My research lines are:
  <ol class="compact-list">
    <li>Automated diagnosis & differential biomarker discovery;</li>
    <li>Mechanism investigation of neurodegeneration & aging;</li>
