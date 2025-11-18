@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently a postdoctoral researcher (supervisor: <a href="https://demonlab.org/members/jake">Jacob Vogel</a>) at DeMON Lab, Lund University, working closely with the <a href="https://biofinder.se/">BioFINDER community</a>. Before moving to Sweden, I completed my Ph.D. at National University of Singapore under the supervision of <a href="https://sites.google.com/view/yeolab/thomas">Thomas Yeo</a>.<br><br>
+I am currently a postdoctoral researcher (supervisor: <a href="https://demonlab.org/members/jake">Jacob Vogel</a>) at DeMON Lab, Lund University, working closely with the <a href="https://biofinder.se/">BioFINDER community</a>. Before moving to Sweden, I completed my Ph.D. at the National University of Singapore under the supervision of <a href="https://sites.google.com/view/yeolab/thomas">Thomas Yeo</a>.<br><br>
 
 My research focuses on <span style="color:red; font-weight:bold;">neurodegenerative diseases</span>, with an emphasis on developing <span style="color:blue; font-weight:bold;">machine learning</span> models to analyze <span style="color:blue; font-weight:bold;">multiscale, multimodal</span> data, including brain imaging, proteomics, and genomics. My research lines are:
  <ol class="compact-list">
@@ -36,7 +36,7 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
       <div>                                                                                                                      </div>
       <div> ========================================================================================= </div>
       <div>08/2025, Zhang Chen's work about <a href="https://doi.org/10.1002/hbm.70280" style="color: #FF6F00"> cross-dataset evaluation of dementia progression modeling </a> is out in Human Brain Mapping!</div>
-      <div>07/2025, I give a talk at AAIC about our <a href="https://www.medrxiv.org/content/10.1101/2025.06.27.25330344v1" style="color: #FF6F00"> AI-proteomics project</a> </div>
+      <div>07/2025, I gave a talk at AAIC about our <a href="https://www.medrxiv.org/content/10.1101/2025.06.27.25330344v1" style="color: #FF6F00"> AI-proteomics project</a> </div>
       <div>07/2025, GNPC, <a href="https://www.nature.com/articles/s41591-025-03834-0" style="color: #FF6F00">the world's largest neuroproteome dataset for neurodegenerative diseases </a> is out in Nature Medicine! </div>
       <div>07/2025, Leon, Csaba & Shaoshi's work about <a href="https://www.nature.com/articles/s41586-025-09250-1" style="color: #FF6F00">balancing scanning time and sample size of fMRI experimemts</a> is out in Nature!</div>
       <div>04/2025, I got <a href="https://aaic.alz.org/" style="color: #FF6F00"> AAIC Conference Fellowship!</a> </div>
