@@ -8,7 +8,7 @@ from scholarly import scholarly
 
 
 def fetch_author_with_retries(scholar_id: str,
-                              max_tries: int = 3,
+                              max_tries: int = 10,
                               wait_seconds: int = 60) -> dict:
     """
     Try to fetch Google Scholar author data multiple times.
