@@ -53,7 +53,7 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
 <br><br>
 
 # 📝 Selected Publications 
-- **An, L.**, Pichet Binette, A., Hristovska, I., Vilkaite, G., Yu, X., Zendehdel, R., Z, Dong., ... & Vogel, J. W. (2026). Benchmarking the AI-based diagnostic potential of plasma proteomics for neurodegenerative disease in 17,187 people. *Nature Medicine*, In Press. [[Preprint]](https://doi.org/10.1101/2025.06.27.25330344)
+- **An, L.**, Pichet Binette, A., Hristovska, I., Vilkaite, G., Xiao, Y., Zendehdel, R., Z, Dong., ... & Vogel, J. W. (2026). Benchmarking the AI-based diagnostic potential of plasma proteomics for neurodegenerative disease in 17,187 people. *Nature Medicine*, In Press. [[Preprint]](https://doi.org/10.1101/2025.06.27.25330344)
 
 - **An, L.**, Zhang, C., Wulan, N., Zhang, S., Chen, P., Ji, F., ... & Yeo, B. T. (2025). DeepResBat: deep residual batch harmonization accounting for covariate distribution differences. *Medical Image Analysis*, 99, 103354. [[Free Download]](https://doi.org/10.1016/j.media.2024.103354)
 
