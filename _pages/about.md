@@ -53,11 +53,11 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
 <br><br>
 
 # 📝 Selected Publications 
+- **An, L.**, Pichet Binette, A., Hristovska, I., Vilkaite, G., Yu, X., Smets, B., ... & Vogel, J. W. (2025). Benchmarking the AI-based diagnostic potential of plasma proteomics for neurodegenerative disease in 17,170 people. *Nature Medicine*, In Press. [[Preprint]](https://doi.org/10.1101/2025.06.27.25330344)
+
 - **An, L.**, Zhang, C., Wulan, N., Zhang, S., Chen, P., Ji, F., ... & Yeo, B. T. (2025). DeepResBat: deep residual batch harmonization accounting for covariate distribution differences. *Medical Image Analysis*, 99, 103354. [[Free Download]](https://doi.org/10.1016/j.media.2024.103354)
 
 - Chen, P., **An, L.**, Wulan, N., Zhang, C., Zhang, S., Ooi, L. Q. R., ... & Yeo, B. T. (2024). Multilayer meta-matching: Translating phenotypic prediction models from multiple datasets to small data. *Imaging neuroscience*, 2, 1-22. [[Free Download]](https://doi.org/10.1162/imag_a_00233)
-
-- Wulan, N., **An, L.**, Zhang, C., Kong, R., Chen, P., Bzdok, D., ... & Yeo, B. T. (2024). Translating phenotypic prediction models from big to small anatomical MRI data using meta-matching. *Imaging Neuroscience*, 2, 1-21. [[Free Download]](https://doi.org/10.1162/imag_a_00251)
 
 - **An, L.**, Chen, J., Chen, P., Zhang, C., He, T., Chen, C., ... & Alzheimer's Disease Neuroimaging Initiative. (2022). Goal-specific brain MRI harmonization. *NeuroImage*, 263, 119570. [[Free Download]](https://doi.org/10.1016/j.neuroimage.2022.119570)
 
