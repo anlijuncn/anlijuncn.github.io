@@ -35,6 +35,7 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
     <div class="ticker-move">
       <div>                                                                                                                      </div>
       <div> ========================================================================================= </div>
+      <div>03/2026, I got <a href="https://adpd.kenes.com/junior-faculty-awards/" style="color: #FF6F00"> AD/PD Junior Faculty Award!</a> </div>
       <div>08/2025, Zhang Chen's work about <a href="https://doi.org/10.1002/hbm.70280" style="color: #FF6F00"> cross-dataset evaluation of dementia progression modeling </a> is out in Human Brain Mapping!</div>
       <div>07/2025, I gave a talk at AAIC about our <a href="https://www.medrxiv.org/content/10.1101/2025.06.27.25330344v1" style="color: #FF6F00"> AI-proteomics project</a> </div>
       <div>07/2025, GNPC, <a href="https://www.nature.com/articles/s41591-025-03834-0" style="color: #FF6F00">the world's largest neuroproteome dataset for neurodegenerative diseases </a> is out in Nature Medicine! </div>
@@ -53,15 +54,15 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
 <br><br>
 
 # 📝 Selected Publications 
-- **An, L.**, Pichet Binette, A., Hristovska, I., Vilkaite, G., Xiao, Y., Zendehdel, R., Z, Dong., ... & Vogel, J. W. (2026). Benchmarking the AI-based diagnostic potential of plasma proteomics for neurodegenerative disease in 17,187 people. *Nature Medicine*, In Press. [[Preprint]](https://doi.org/10.1101/2025.06.27.25330344)
+- **An, L.**, Pichet Binette, A., Hristovska, I., Vilkaite, G., Xiao, Y., ... & Vogel, J. W. (2026). Benchmarking the AI-based diagnostic potential of plasma proteomics for neurodegenerative disease in 17,187 people. *Nature Medicine*, In Press. [[Preprint]](https://doi.org/10.1101/2025.06.27.25330344)
 
-- **An, L.**, Zhang, C., Wulan, N., Zhang, S., Chen, P., Ji, F., ... & Yeo, B. T. (2025). DeepResBat: deep residual batch harmonization accounting for covariate distribution differences. *Medical Image Analysis*, 99, 103354. [[Free Download]](https://doi.org/10.1016/j.media.2024.103354)
+- **An, L.**, Zhang, C., Wulan, N., Zhang, S., Chen, P., ... & Yeo, B. T. (2025). DeepResBat: deep residual batch harmonization accounting for covariate distribution differences. *Medical Image Analysis*, 99, 103354. [[Free Download]](https://doi.org/10.1016/j.media.2024.103354)
 
-- Chen, P., **An, L.**, Wulan, N., Zhang, C., Zhang, S., Ooi, L. Q. R., ... & Yeo, B. T. (2024). Multilayer meta-matching: Translating phenotypic prediction models from multiple datasets to small data. *Imaging neuroscience*, 2, 1-22. [[Free Download]](https://doi.org/10.1162/imag_a_00233)
+- Chen, P., **An, L.**, Wulan, N., Zhang, C., Zhang, S., ... & Yeo, B. T. (2024). Multilayer meta-matching: Translating phenotypic prediction models from multiple datasets to small data. *Imaging neuroscience*, 2, 1-22. [[Free Download]](https://doi.org/10.1162/imag_a_00233)
 
-- **An, L.**, Chen, J., Chen, P., Zhang, C., He, T., Chen, C., ... & Alzheimer's Disease Neuroimaging Initiative. (2022). Goal-specific brain MRI harmonization. *NeuroImage*, 263, 119570. [[Free Download]](https://doi.org/10.1016/j.neuroimage.2022.119570)
+- **An, L.**, Chen, J., Chen, P., Zhang, C., He, T., ... & Alzheimer's Disease Neuroimaging Initiative. (2022). Goal-specific brain MRI harmonization. *NeuroImage*, 263, 119570. [[Free Download]](https://doi.org/10.1016/j.neuroimage.2022.119570)
 
-- He, T., **An, L.**, Chen, P., Chen, J., Feng, J., Bzdok, D., ... & Yeo, B. T. (2022). Meta-matching as a simple framework to translate phenotypic predictive models from big to small data. *Nature neuroscience*, 25(6), 795-804. [[PDF]](/pdf/He_2022_NN.pdf) 
+- He, T., **An, L.**, Chen, P., Chen, J., Feng, J., ... & Yeo, B. T. (2022). Meta-matching as a simple framework to translate phenotypic predictive models from big to small data. *Nature neuroscience*, 25(6), 795-804. [[PDF]](/pdf/He_2022_NN.pdf) 
 <br><br>
 
 
