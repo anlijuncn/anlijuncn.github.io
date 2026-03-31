@@ -57,7 +57,7 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
 # 📝 Selected Publications 
 - **An, L.**, Pichet Binette, A., Hristovska, I., Vilkaite, G., Xiao, Y., ... & Vogel, J. W. (2026). A deep joint-learning proteomics model for diagnosis of six conditions associated with dementia. *Nature Medicine*. [[Free Download]](https://doi.org/10.1038/s41591-026-04303-y)
 
-- Ooi, L. Q. R., Orban, C., Zhang, S., Nichols, T. E., Tan, T. W. K., Kong, R., ..., **An, L.**, ... & Alzheimer’s Disease Neuroimaging Initiative Jack Clifford R. Jr 36. (2025). Longer scans boost prediction and cut costs in brain-wide association studies. Nature, 644(8077), 731-740. [[Free Download]](https://doi.org/10.1038/s41586-025-09250-1)
+- Ooi, L. Q. R., Orban, C., Zhang, S., Nichols, T. E., Tan, T. W. K., Kong, R., ..., **An, L.**, ... & Alzheimer’s Disease Neuroimaging Initiative Jack Clifford R. Jr 36. (2025). Longer scans boost prediction and cut costs in brain-wide association studies. *Nature*, 644(8077), 731-740. [[Free Download]](https://doi.org/10.1038/s41586-025-09250-1)
 
 - **An, L.**, Zhang, C., Wulan, N., Zhang, S., Chen, P., ... & Yeo, B. T. (2025). DeepResBat: deep residual batch harmonization accounting for covariate distribution differences. *Medical Image Analysis*, 99, 103354. [[Free Download]](https://doi.org/10.1016/j.media.2024.103354)
 
