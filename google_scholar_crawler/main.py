@@ -18,7 +18,7 @@ def fetch_author_with_retries(scholar_id: str,
     last_exc = None
     for attempt in range(1, max_tries + 1):
         try:
-            print(f"[INFO] Fetching Google Scholar data (attempt {attempt}/{max_tries})",
+            print(f"[INFO] Fetching Google Scholar data (attempt: {attempt}/{max_tries})",
                   file=sys.stderr)
             author = scholarly.search_author_id(scholar_id)
             scholarly.fill(author, sections=["basics", "indices", "counts"])
