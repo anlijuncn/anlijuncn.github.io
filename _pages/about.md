@@ -35,6 +35,8 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
     <div class="ticker-move">
       <div>                                                                                                                      </div>
       <div> ========================================================================================= </div>
+      <div>06/2026, Lina's work about <a href="https://www.nature.com/articles/s43587-026-01123-0" style="color: #FF6F00">Proteomics signatures of APOE genetic variants</a> is out in Nature Aging!</div>
+      <div>04/2026, Chunzhi's work about <a href="https://www.the-innovation.org/article/doi/10.59717/j.xinn-med.2026.100214" style="color: #FF6F00">functional interaction patterns from solely circadian rhythm disturbance to circadian rhythm sleep disorder</a> is out in The Innovation Medicine!</div>
       <div>03/2026, My work about <a href="https://www.nature.com/articles/s41591-026-04303-y" style="color: #FF6F00">AI-proteomics for diagnosing multiple neurodegenerative diseases</a> is out in Nature Medicine!</div>
       <div>03/2026, I got <a href="https://adpd.kenes.com/junior-faculty-awards/" style="color: #FF6F00"> AD/PD Junior Faculty Award!</a> </div>
       <div>08/2025, Zhang Chen's work about <a href="https://doi.org/10.1002/hbm.70280" style="color: #FF6F00"> cross-dataset evaluation of dementia progression modeling </a> is out in Human Brain Mapping!</div>
