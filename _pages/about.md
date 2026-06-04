@@ -35,6 +35,7 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
     <div class="ticker-move">
       <div>                                                                                                                      </div>
       <div> ========================================================================================= </div>
+        <div>06/2026, Chunzhi's work about <a href="https://ieeexplore.ieee.org/abstract/document/11540197" style="color: #FF6F00">fMRI self-supervised learning </a> is out in IEEE Transactions on Neural Systems and Rehabilitation Engineering!</div>
       <div>06/2026, Lina's work about <a href="https://www.nature.com/articles/s43587-026-01123-0" style="color: #FF6F00">Proteomics signatures of APOE genetic variants</a> is out in Nature Aging!</div>
       <div>04/2026, Chunzhi's work about <a href="https://www.the-innovation.org/article/doi/10.59717/j.xinn-med.2026.100214" style="color: #FF6F00">functional interaction patterns from solely circadian rhythm disturbance to circadian rhythm sleep disorder</a> is out in The Innovation Medicine!</div>
       <div>03/2026, My work about <a href="https://www.nature.com/articles/s41591-026-04303-y" style="color: #FF6F00">AI-proteomics for diagnosing multiple neurodegenerative diseases</a> is out in Nature Medicine!</div>
@@ -72,9 +73,9 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
 ----
 <div align="center" style="margin-top: 1em; margin-bottom: 2em;">
   <div style="width: 30%; min-width: 300px; max-width: 500px;">
-    <script type="text/javascript" id="clustrmaps" 
-      src="//clustrmaps.com/map_v2.js?d=_zQfsjUjuHvJ9mh5OBz98IxpQr51kcbnfMLkOLKXTcQ&cl=ffffff&w=a">
-    </script>
+  <script type="text/javascript" id="mapmyvisitors" 
+      src="//mapmyvisitors.com/map.js?d=tcKX-Xhb2sQXUPK_ki20J-QWpVMNo4--me1aIdPeSuc&cl=ffffff&w=a">
+  </script>
   </div>
   <p style="font-size: 0.9rem; color: #666;">Click the map to see live visitor stats</p>
 </div>
