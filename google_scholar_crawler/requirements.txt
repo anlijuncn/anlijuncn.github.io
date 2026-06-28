@@ -1,3 +1,2 @@
-jsonpickle
-scholarly
 httpx
+beautifulsoup4
