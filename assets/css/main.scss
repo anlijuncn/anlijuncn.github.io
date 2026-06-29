@@ -166,6 +166,23 @@ h1:before, .anchor:before {
   background: var(--site-bg);
 }
 
+.cv-viewer-darken {
+  display: none;
+}
+
+:root[data-theme="dark"] .cv-viewer-darken {
+  position: fixed;
+  top: 4.55rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+  pointer-events: none;
+  background: #fff;
+  mix-blend-mode: difference;
+}
+
 .cv-viewer-actions {
   position: fixed;
   right: 1rem;
