@@ -132,8 +132,10 @@
   @include breakpoint($medium) {
     font-size: $type-size-3;
   }
-  font-family: $serif;
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
   font-size: $type-size-4;
+  font-weight: 700;
+  letter-spacing: 0;
 }
 
 .author__bio {
