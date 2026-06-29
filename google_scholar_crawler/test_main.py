@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 
+import main
 from main import parse_author_profile, parse_publications
 
 
@@ -97,3 +98,38 @@ def test_parse_publications_reads_ids_and_citation_counts():
     assert publications["La_luGsAAAAJ:abc123"]["bib"]["title"] == "Example Paper"
     assert publications["La_luGsAAAAJ:abc123"]["bib"]["pub_year"] == "2026"
     assert publications["La_luGsAAAAJ:no_cites"]["num_citations"] == 0
+
+
+def test_build_remote_stats_url_uses_repository_env(monkeypatch):
+    monkeypatch.setenv("GITHUB_REPOSITORY", "owner/repo")
+
+    url = main.build_remote_stats_url("gs_data.json")
+
+    assert url == (
+        "https://raw.githubusercontent.com/owner/repo/"
+        "google-scholar-stats/gs_data.json"
+    )
+
+
+def test_read_previous_author_prefers_local_cache(tmp_path, monkeypatch):
+    cache_path = tmp_path / "gs_data.json"
+    cache_path.write_text('{"name": "local", "citedby": 10}', encoding="utf-8")
+    monkeypatch.setattr(main, "GS_DATA_PATH", cache_path)
+    monkeypatch.setattr(
+        main,
+        "read_remote_json",
+        lambda filename: {"name": "remote", "citedby": 20},
+    )
+
+    assert main.read_previous_author() == {"name": "local", "citedby": 10}
+
+
+def test_read_previous_author_falls_back_to_stats_branch(tmp_path, monkeypatch):
+    monkeypatch.setattr(main, "GS_DATA_PATH", tmp_path / "missing.json")
+    monkeypatch.setattr(
+        main,
+        "read_remote_json",
+        lambda filename: {"name": "remote", "citedby": 20},
+    )
+
+    assert main.read_previous_author() == {"name": "remote", "citedby": 20}

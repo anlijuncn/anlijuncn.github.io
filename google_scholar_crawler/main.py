@@ -8,11 +8,17 @@ import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, Optional
+from types import TracebackType
+from typing import Any, Dict, Optional, Type
 from urllib.parse import parse_qs, urlencode, urljoin, urlparse
 
 import httpx
 from bs4 import BeautifulSoup
+
+try:
+    from curl_cffi import requests as curl_requests
+except ImportError:
+    curl_requests = None
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -24,6 +30,9 @@ DEFAULT_MAX_TRIES = 3
 DEFAULT_WAIT_SECONDS = 10
 DEFAULT_MAX_PUBLICATION_PAGES = 5
 REQUEST_TIMEOUT_SECONDS = 20
+
+DEFAULT_REPOSITORY = "anlijuncn/anlijuncn.github.io"
+REMOTE_STATS_BRANCH = "google-scholar-stats"
 
 SCHOLAR_PROFILE_URL = "https://scholar.google.com/citations"
 SCHOLAR_SECTIONS = ["basics", "indices", "counts", "publications"]
@@ -100,21 +109,90 @@ def is_antibot_response(text: str) -> bool:
     )
 
 
+class ScholarHttpClient:
+    """HTTP client with browser impersonation first and plain HTTP fallback."""
+
+    def __init__(self) -> None:
+        self._httpx_client: Optional[httpx.Client] = None
+        self._curl_session: Any = None
+
+    def __enter__(self) -> "ScholarHttpClient":
+        self._httpx_client = httpx.Client(
+            headers=REQUEST_HEADERS,
+            follow_redirects=True,
+            timeout=REQUEST_TIMEOUT_SECONDS,
+        )
+
+        if curl_requests is not None:
+            self._curl_session = curl_requests.Session()
+
+        return self
+
+    def __exit__(
+        self,
+        exc_type: Optional[Type[BaseException]],
+        exc_value: Optional[BaseException],
+        traceback: Optional[TracebackType],
+    ) -> None:
+        if self._curl_session is not None:
+            self._curl_session.close()
+
+        if self._httpx_client is not None:
+            self._httpx_client.close()
+
+    def get_text(self, url: str) -> str:
+        """Fetch a URL and return text, trying Chrome impersonation first."""
+        errors = []
+
+        if self._curl_session is not None:
+            try:
+                response = self._curl_session.get(
+                    url,
+                    headers=REQUEST_HEADERS,
+                    impersonate=os.environ.get(
+                        "GOOGLE_SCHOLAR_IMPERSONATE",
+                        "chrome120",
+                    ),
+                    timeout=REQUEST_TIMEOUT_SECONDS,
+                )
+
+                if response.status_code >= 400:
+                    raise RuntimeError(
+                        f"HTTP {response.status_code} for url {url}"
+                    )
+
+                return response.text
+
+            except Exception as exc:
+                errors.append(f"curl_cffi: {exc}")
+                log_warn(f"Browser-like request failed: {exc}")
+
+        if self._httpx_client is None:
+            raise RuntimeError("HTTP client has not been initialized.")
+
+        try:
+            response = self._httpx_client.get(url)
+            response.raise_for_status()
+            return response.text
+        except Exception as exc:
+            errors.append(f"httpx: {exc}")
+            raise RuntimeError("; ".join(errors)) from exc
+
+
 def fetch_profile_page(
-    client: httpx.Client,
+    client: ScholarHttpClient,
     scholar_id: str,
     *,
     cstart: int = 0,
 ) -> BeautifulSoup:
     """Fetch one Google Scholar author profile page."""
     url = build_profile_url(scholar_id, cstart=cstart)
-    response = client.get(url)
-    response.raise_for_status()
+    text = client.get_text(url)
 
-    if is_antibot_response(response.text):
+    if is_antibot_response(text):
         raise RuntimeError("Google Scholar returned an anti-bot challenge.")
 
-    soup = BeautifulSoup(response.text, "html.parser")
+    soup = BeautifulSoup(text, "html.parser")
 
     if not soup.select_one("#gsc_prf_in"):
         raise RuntimeError("Could not find Google Scholar profile content.")
@@ -286,11 +364,7 @@ def fetch_author_once(
     dict
         Parsed author dictionary from the Google Scholar profile page.
     """
-    with httpx.Client(
-        headers=REQUEST_HEADERS,
-        follow_redirects=True,
-        timeout=REQUEST_TIMEOUT_SECONDS,
-    ) as client:
+    with ScholarHttpClient() as client:
         soup = fetch_profile_page(client, scholar_id)
         author = parse_author_profile(soup)
         publications = parse_publications(soup)
@@ -375,6 +449,49 @@ def read_json(path: Path) -> Optional[Dict[str, Any]]:
     return data if isinstance(data, dict) else None
 
 
+def get_repository_name() -> str:
+    """Return the GitHub repository name used for fallback data."""
+    return (
+        os.environ.get("GOOGLE_SCHOLAR_STATS_REPOSITORY")
+        or os.environ.get("GITHUB_REPOSITORY")
+        or DEFAULT_REPOSITORY
+    )
+
+
+def build_remote_stats_url(filename: str) -> str:
+    """Build the raw GitHub URL for the previous stats branch output."""
+    repository = get_repository_name().strip("/")
+    return (
+        f"https://raw.githubusercontent.com/{repository}/"
+        f"{REMOTE_STATS_BRANCH}/{filename}"
+    )
+
+
+def read_remote_json(filename: str) -> Optional[Dict[str, Any]]:
+    """Read previous JSON data from the google-scholar-stats branch."""
+    url = build_remote_stats_url(filename)
+
+    try:
+        with httpx.Client(
+            headers=REQUEST_HEADERS,
+            follow_redirects=True,
+            timeout=REQUEST_TIMEOUT_SECONDS,
+        ) as client:
+            response = client.get(url)
+            response.raise_for_status()
+            data = response.json()
+    except Exception as exc:
+        log_warn(f"Could not read previous JSON data from {url}: {exc}")
+        return None
+
+    return data if isinstance(data, dict) else None
+
+
+def read_previous_author() -> Optional[Dict[str, Any]]:
+    """Read previous author data from local cache or the stats branch."""
+    return read_json(GS_DATA_PATH) or read_remote_json("gs_data.json")
+
+
 def build_shieldsio_data(citedby: int) -> Dict[str, Any]:
     """
     Build Shields.io-compatible JSON data.
@@ -455,7 +572,7 @@ def main() -> None:
 
     except Exception as exc:
         log_error(f"Could not fetch Google Scholar data: {exc}")
-        previous_author = read_json(GS_DATA_PATH)
+        previous_author = read_previous_author()
 
         if not previous_author:
             raise SystemExit(1) from exc
