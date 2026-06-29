@@ -26,7 +26,7 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
    <li>Research & clinical toolkit development.</li>
  </ol>
 
-​I have published 15+ peer-reviewed articles in top journals, including *Nature*, *Nature Medicine*, *Nature Neuroscience*, *Science Advances*, *PNAS*, and *Medical Image Analysis*. My research works can be found at <a href='https://scholar.google.com/citations?hl=en&user=La_luGsAAAAJ&view_op=list_works&sortby=pubdate'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=Google Scholar w/ citation:"></a>.<br><br>
+​I have published 20+ peer-reviewed articles in journals including *Nature*, *Nature Medicine*, *Nature Neuroscience*, *Science Advances*, *PNAS*, and *Medical Image Analysis*. My research works can be found at <a href='https://scholar.google.com/citations?hl=en&user=La_luGsAAAAJ&view_op=list_works&sortby=pubdate'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=Google Scholar w/ citation:"></a>.<br><br>
 
 
 # 🔥 News
@@ -58,7 +58,7 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
 <br><br>
 
 # 📝 Selected Publications 
-- **An, L.**, Pichet Binette, A., Hristovska, I., Vilkaite, G., Xiao, Y., ... & Vogel, J. W. (2026). A deep joint-learning proteomics model for diagnosis of six conditions associated with dementia. *Nature Medicine*. [[Free Download]](https://doi.org/10.1038/s41591-026-04303-y)
+- **An, L.**, Pichet Binette, A., Hristovska, I., Vilkaite, G., Xiao, Y., ... & Vogel, J. W. (2026). A deep joint-learning proteomics model for diagnosis of six conditions associated with dementia. *Nature Medicine*, 32, 1852–1864 (2026).. [[Free Download]](https://doi.org/10.1038/s41591-026-04303-y)
 
 - Ooi, L. Q. R., Orban, C., Zhang, S., Nichols, T. E., Tan, T. W. K., Kong, R., ..., **An, L.**, ... & Alzheimer’s Disease Neuroimaging Initiative Jack Clifford R. Jr 36. (2025). Longer scans boost prediction and cut costs in brain-wide association studies. *Nature*, 644(8077), 731-740. [[Free Download]](https://doi.org/10.1038/s41586-025-09250-1)
 
