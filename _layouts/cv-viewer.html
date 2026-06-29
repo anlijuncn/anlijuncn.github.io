@@ -12,18 +12,18 @@ layout: compress
   <body class="cv-viewer-body">
     {% include browser-upgrade.html %}
 
-    <main class="cv-viewer-main" aria-label="Curriculum vitae">
+    <main class="cv-viewer-main" aria-label="{{ page.title | default: 'PDF' | escape }}">
       <iframe
         class="cv-viewer-frame"
-        title="Lijun An CV"
+        title="{{ page.title | default: 'PDF' | escape }}"
         src="{{ page.pdf_url }}">
       </iframe>
 
       <div class="cv-viewer-darken" aria-hidden="true"></div>
 
-      <div class="cv-viewer-actions" aria-label="CV actions">
+      <div class="cv-viewer-actions" aria-label="{{ page.title | default: 'PDF' | escape }} actions">
         <a href="/" target="_self">Home</a>
-        <a href="{{ page.download_url }}">Download</a>
+        <a href="{{ page.download_url }}"{% if page.download_filename %} download="{{ page.download_filename }}"{% endif %}>Download</a>
       </div>
     </main>
   </body>
