@@ -148,13 +148,13 @@ h1:before, .anchor:before {
   min-height: 100vh;
   margin: 0;
   overflow: hidden;
-  background: var(--site-bg);
+  background: #858585;
 }
 
 .cv-viewer-main {
   position: fixed;
   inset: 0;
-  background: var(--site-bg);
+  background: #858585;
 }
 
 .cv-viewer-frame {
@@ -164,7 +164,7 @@ h1:before, .anchor:before {
   width: 100vw;
   height: 100vh;
   border: 0;
-  background: var(--site-bg);
+  background: #858585;
 }
 
 .pdf-native-fallback .cv-viewer-frame {
@@ -198,10 +198,10 @@ h1:before, .anchor:before {
   z-index: 3;
   transform: translateX(-50%);
   padding: 0.45rem 0.75rem;
-  border: 1px solid var(--site-panel-border);
+  border: 1px solid rgba(119, 128, 138, 0.42);
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.86);
-  color: var(--site-text);
+  color: #2f3a44;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.82rem;
   font-weight: 700;
@@ -234,35 +234,6 @@ h1:before, .anchor:before {
   display: block;
 }
 
-.cv-viewer-darken {
-  display: none;
-}
-
-:root[data-theme="dark"] .pdf-native-fallback .cv-viewer-darken {
-  position: fixed;
-  top: 4.55rem;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  display: block;
-  pointer-events: none;
-  background: #fff;
-  mix-blend-mode: difference;
-}
-
-:root[data-theme="dark"] .cv-pdf-viewer {
-  background: #2f3236;
-}
-
-:root[data-theme="dark"] .cv-pdf-status {
-  background: rgba(24, 28, 34, 0.86);
-}
-
-:root[data-theme="dark"] .cv-pdf-canvas {
-  filter: invert(1) hue-rotate(180deg);
-}
-
 .cv-viewer-actions {
   position: fixed;
   right: 1rem;
@@ -285,10 +256,10 @@ h1:before, .anchor:before {
   justify-content: center;
   min-height: 2rem;
   padding: 0.35rem 0.65rem;
-  border: 1px solid var(--site-panel-border);
+  border: 1px solid rgba(119, 128, 138, 0.42);
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.78);
-  color: var(--site-link);
+  color: #2c6ebd;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.78rem;
   font-weight: 700;
@@ -299,13 +270,8 @@ h1:before, .anchor:before {
 }
 
 .cv-viewer-actions a:hover {
-  color: var(--site-link-hover);
+  color: #174f90;
   text-decoration: none;
-}
-
-:root[data-theme="dark"] .cv-viewer-actions a {
-  background: rgba(24, 28, 34, 0.82);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.32);
 }
 
 .news-ticker {

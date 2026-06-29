@@ -28,8 +28,6 @@ layout: compress
         data-fallback-src="{{ page.fallback_pdf_url | default: page.pdf_url }}">
       </iframe>
 
-      <div class="cv-viewer-darken" aria-hidden="true"></div>
-
       <div class="cv-viewer-actions" aria-label="{{ page.title | default: 'PDF' | escape }} actions">
         <a href="/" target="_self">Home</a>
         <a href="{{ page.download_url }}"{% if page.download_filename %} download="{{ page.download_filename }}"{% endif %}>Download</a>
