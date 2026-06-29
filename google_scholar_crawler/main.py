@@ -500,6 +500,7 @@ def build_shieldsio_data(citedby: int) -> Dict[str, Any]:
         "schemaVersion": 1,
         "label": "Google Scholar w/ citation:",
         "message": str(citedby),
+        "cacheSeconds": 300,
     }
 
 

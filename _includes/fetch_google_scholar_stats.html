@@ -5,14 +5,30 @@
         {% else %}
         var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
         {% endif %}
-        $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+        $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json?cb=" + Date.now(), function (data) {
             var totalCitation = data['citedby']
-            document.getElementById('total_cit').innerHTML = totalCitation;
+            var totalCitationElement = document.getElementById('total_cit');
+            if (totalCitationElement) {
+                var currentUpdated = totalCitationElement.getAttribute('data-updated');
+                var remoteUpdated = data['updated'];
+                var shouldUpdate = !currentUpdated;
+                if (!shouldUpdate && remoteUpdated) {
+                    shouldUpdate = Date.parse(remoteUpdated) >= Date.parse(currentUpdated);
+                }
+                if (shouldUpdate) {
+                    totalCitationElement.textContent = totalCitation;
+                    if (remoteUpdated) {
+                        totalCitationElement.setAttribute('data-updated', remoteUpdated);
+                    }
+                }
+            }
             var citationEles = document.getElementsByClassName('show_paper_citations')
             Array.prototype.forEach.call(citationEles, element => {
                 var paperId = element.getAttribute('data')
-                var numCitations = data['publications'][paperId]['num_citations']
-                element.innerHTML = '| Citations: ' + numCitations;
+                var publication = data['publications'] && data['publications'][paperId]
+                if (publication) {
+                    element.innerHTML = '| Citations: ' + publication['num_citations'];
+                }
             });
         });
     })

@@ -108,6 +108,42 @@ h1:before, .anchor:before {
     font-size: .8em;
 }
 
+.scholar-citation-badge {
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 4px;
+    color: #333;
+    background: #f6f6f6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: .72em;
+    line-height: 1.35;
+    text-decoration: none;
+    vertical-align: .12em;
+    white-space: nowrap;
+}
+
+.scholar-citation-badge:hover {
+    text-decoration: none;
+}
+
+.scholar-citation-icon {
+    padding: .05em .35em .05em .55em;
+    color: #4285f4;
+    font-size: .9em;
+}
+
+.scholar-citation-label {
+    padding: .05em .45em .05em .1em;
+}
+
+.scholar-citation-count {
+    align-self: stretch;
+    padding: .05em .55em;
+    color: #2f3a44;
+    background: #9cf;
+}
+
 
 .news-ticker {
   width: 100%;
@@ -150,5 +186,4 @@ h1:before, .anchor:before {
 .news-ticker:hover .ticker-move {
   animation-play-state: paused;
 }
-
 

@@ -17,6 +17,7 @@ const palaceInterpretations = {
 
 document.addEventListener('DOMContentLoaded', function() {
     runTimeCalculation();
+    setRandomNumberInputs();
 });
 
 function openTab(evt, tabName) {
@@ -31,6 +32,9 @@ function openTab(evt, tabName) {
     }
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
+    if (tabName === 'NumberMode') {
+        setRandomNumberInputs();
+    }
 }
 
 function getHourBranchIndex(hour) {
@@ -64,7 +68,18 @@ function runTimeCalculation() {
     displayResult(xiaoLiuRenPalaces[finalIndex], 'time-result-container');
 }
 
+function getRandomNumber() {
+    return Math.floor(Math.random() * 1000) + 1;
+}
+
+function setRandomNumberInputs() {
+    ['num1', 'num2', 'num3'].forEach(function(id) {
+        document.getElementById(id).value = getRandomNumber();
+    });
+}
+
 function runNumberCalculation() {
+    setRandomNumberInputs();
     const num1 = parseInt(document.getElementById('num1').value) || 0;
     const num2 = parseInt(document.getElementById('num2').value) || 0;
     const num3 = parseInt(document.getElementById('num3').value) || 0;

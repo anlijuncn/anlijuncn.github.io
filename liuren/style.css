@@ -85,6 +85,11 @@ h1 {
     text-align: center;
     box-sizing: border-box; /* 确保 padding 不会影响宽度计算 */
 }
+.number-inputs input[readonly] {
+    background-color: #fff;
+    color: #111;
+    cursor: default;
+}
 
 /* 核心布局改变 */
 .output-wrapper {

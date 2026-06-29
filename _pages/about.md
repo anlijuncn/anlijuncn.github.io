@@ -8,13 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
-
 <span class='anchor' id='about-me'></span>
 
 I am currently a postdoctoral researcher (supervisor: <a href="https://demonlab.org/members/jake">Jacob Vogel</a>) at DeMON Lab, Lund University, working closely with the <a href="https://biofinder.se/">BioFINDER community</a>. Before moving to Sweden, I completed my Ph.D. at the National University of Singapore under the supervision of <a href="https://sites.google.com/view/yeolab/thomas">Thomas Yeo</a>.<br><br>
@@ -26,7 +19,7 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
    <li>Research & clinical toolkit development.</li>
  </ol>
 
-​I have published 20+ peer-reviewed articles in journals including *Nature*, *Nature Medicine*, *Nature Neuroscience*, *Science Advances*, *PNAS*, and *Medical Image Analysis*. My research works can be found at <a href='https://scholar.google.com/citations?hl=en&user=La_luGsAAAAJ&view_op=list_works&sortby=pubdate'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=Google Scholar w/ citation:"></a>.<br><br>
+​I have published 20+ peer-reviewed articles in journals including *Nature*, *Nature Medicine*, *Nature Neuroscience*, *Science Advances*, *PNAS*, and *Medical Image Analysis*. My research works can be found at <a class="scholar-citation-badge" href='https://scholar.google.com/citations?hl=en&user=La_luGsAAAAJ&view_op=list_works&sortby=pubdate'><span class="scholar-citation-icon">◆</span><span class="scholar-citation-label">Google Scholar w/ citation:</span><span class="scholar-citation-count" id="total_cit" data-updated="2026-06-29T15:16:28.123118+00:00">934</span></a>.<br><br>
 
 
 # 🔥 News
