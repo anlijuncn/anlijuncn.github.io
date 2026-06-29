@@ -116,6 +116,32 @@ h1 {
     outline: 3px solid var(--accent-color);
     outline-offset: 3px;
 }
+.theme-toggle .theme-icon {
+    display: none;
+    width: 20px;
+    height: 20px;
+}
+.theme-toggle svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+}
+.theme-toggle .theme-icon--moon svg {
+    fill: currentColor;
+    stroke: none;
+}
+:root:not([data-theme="dark"]) .theme-toggle .theme-icon--moon,
+:root[data-theme="light"] .theme-toggle .theme-icon--moon {
+    display: block;
+}
+:root[data-theme="dark"] .theme-toggle .theme-icon--sun {
+    display: block;
+}
 
 .tabs {
     overflow: hidden;

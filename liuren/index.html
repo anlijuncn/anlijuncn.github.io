@@ -9,8 +9,18 @@
 <body>
 
 <main class="container">
-    <button type="button" id="theme-toggle" class="theme-toggle" aria-label="切换黑白背景" title="切换黑白背景">
-        <span id="theme-toggle-icon" aria-hidden="true">黑</span>
+    <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to night mode" title="Switch to night mode">
+        <span class="theme-icon theme-icon--moon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M21 14.8A8.2 8.2 0 0 1 9.2 3 9.2 9.2 0 1 0 21 14.8Z"></path>
+            </svg>
+        </span>
+        <span class="theme-icon theme-icon--sun" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+            </svg>
+        </span>
     </button>
 
     <h1>小六壬起卦</h1>
