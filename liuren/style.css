@@ -25,7 +25,6 @@ h1 {
     font-weight: 600;
 }
 
-/* 标签页样式 */
 .tabs {
     overflow: hidden;
     border-bottom: 2px solid #ccc;
@@ -56,6 +55,9 @@ h1 {
     padding: 6px 12px;
     border-top: none;
 }
+.tab-content.active {
+    display: block;
+}
 
 .info-panel {
     text-align: left;
@@ -83,7 +85,7 @@ h1 {
     border-radius: 5px;
     border: 1px solid #bdc3c7;
     text-align: center;
-    box-sizing: border-box; /* 确保 padding 不会影响宽度计算 */
+    box-sizing: border-box;
 }
 .number-inputs input[readonly] {
     background-color: #fff;
@@ -91,7 +93,6 @@ h1 {
     cursor: default;
 }
 
-/* 核心布局改变 */
 .output-wrapper {
     display: flex;
     gap: 20px;
@@ -124,7 +125,6 @@ h1 {
 }
 .process p { margin: 10px 0; line-height: 1.6; font-size: 15px; }
 
-/* 结果区域样式 */
 .result {
     padding: 20px;
     border-radius: 8px;
@@ -163,7 +163,6 @@ h1 {
 .result-body p { margin: 10px 0; }
 .result-body strong { display: block; margin-bottom: 5px; font-size: 17px; }
 
-/* 吉凶颜色 */
 .result.good { background-color: #e8f8f5; border: 1px solid #76d7c4; }
 .result.good .result-header { border-bottom-color: #76d7c4; }
 .result.good .result-name { color: #1abc9c; }
@@ -233,26 +232,25 @@ button:active { transform: scale(0.98); }
     color: #b0bec5;
 }
 
-/* 响应式布局：当屏幕宽度小于768px时 (手机等竖屏设备) */
 @media (max-width: 768px) {
     body {
-        padding: 10px; /* 减小页面边距 */
+        padding: 10px;
     }
     .container {
         padding: 15px;
     }
     h1 {
-        font-size: 26px; /* 调整主标题大小 */
+        font-size: 26px;
     }
     .output-wrapper {
-        flex-direction: column; /* 双栏变单栏 */
+        flex-direction: column;
     }
     .number-inputs {
-        flex-direction: column; /* 数字输入框垂直排列 */
+        flex-direction: column;
         gap: 10px;
     }
     .number-inputs input {
-        width: 100%; /* 输入框占满宽度，方便点击 */
+        width: 100%;
     }
     .result-name {
         font-size: 28px;
