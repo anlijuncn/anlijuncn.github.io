@@ -160,17 +160,85 @@ h1:before, .anchor:before {
 .cv-viewer-frame {
   position: absolute;
   inset: 0;
+  display: none;
   width: 100vw;
   height: 100vh;
   border: 0;
   background: var(--site-bg);
 }
 
+.pdf-native-fallback .cv-viewer-frame {
+  display: block;
+}
+
+.pdf-native-fallback .cv-pdf-viewer {
+  display: none;
+}
+
+.cv-pdf-viewer {
+  position: absolute;
+  inset: 0;
+  overflow: auto;
+  padding: 1.75rem 1rem 4rem;
+  background: #858585;
+}
+
+.cv-pdf-pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  min-height: 100%;
+}
+
+.cv-pdf-status {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  z-index: 3;
+  transform: translateX(-50%);
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--site-panel-border);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.86);
+  color: var(--site-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1;
+  backdrop-filter: blur(12px);
+}
+
+.cv-pdf-page {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  background: #fff;
+  line-height: 0;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.34);
+}
+
+.cv-pdf-canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.cv-pdf-link-layer {
+  position: absolute;
+  inset: 0;
+}
+
+.cv-pdf-link {
+  position: absolute;
+  display: block;
+}
+
 .cv-viewer-darken {
   display: none;
 }
 
-:root[data-theme="dark"] .cv-viewer-darken {
+:root[data-theme="dark"] .pdf-native-fallback .cv-viewer-darken {
   position: fixed;
   top: 4.55rem;
   right: 0;
@@ -181,6 +249,18 @@ h1:before, .anchor:before {
   pointer-events: none;
   background: #fff;
   mix-blend-mode: difference;
+}
+
+:root[data-theme="dark"] .cv-pdf-viewer {
+  background: #2f3236;
+}
+
+:root[data-theme="dark"] .cv-pdf-status {
+  background: rgba(24, 28, 34, 0.86);
+}
+
+:root[data-theme="dark"] .cv-pdf-canvas {
+  filter: invert(1) hue-rotate(180deg);
 }
 
 .cv-viewer-actions {

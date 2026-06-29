@@ -13,10 +13,19 @@ layout: compress
     {% include browser-upgrade.html %}
 
     <main class="cv-viewer-main" aria-label="{{ page.title | default: 'PDF' | escape }}">
+      <div
+        id="cv-pdf-viewer"
+        class="cv-pdf-viewer"
+        data-pdf-url="{{ page.render_pdf_url | default: page.pdf_url | split: '#' | first | escape }}"
+        data-pdf-title="{{ page.title | default: 'PDF' | escape }}">
+        <div class="cv-pdf-status" role="status">Loading {{ page.title | default: 'PDF' | escape }}...</div>
+        <div class="cv-pdf-pages" aria-label="{{ page.title | default: 'PDF' | escape }} pages"></div>
+      </div>
+
       <iframe
         class="cv-viewer-frame"
         title="{{ page.title | default: 'PDF' | escape }}"
-        src="{{ page.pdf_url }}">
+        data-fallback-src="{{ page.fallback_pdf_url | default: page.pdf_url }}">
       </iframe>
 
       <div class="cv-viewer-darken" aria-hidden="true"></div>
@@ -26,5 +35,126 @@ layout: compress
         <a href="{{ page.download_url }}"{% if page.download_filename %} download="{{ page.download_filename }}"{% endif %}>Download</a>
       </div>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+      (async () => {
+        const viewer = document.getElementById("cv-pdf-viewer");
+        const pagesRoot = viewer.querySelector(".cv-pdf-pages");
+        const status = viewer.querySelector(".cv-pdf-status");
+        const fallbackFrame = document.querySelector(".cv-viewer-frame");
+        const pdfUrl = viewer.dataset.pdfUrl;
+        const pdfTitle = viewer.dataset.pdfTitle || "PDF";
+        const pdfWorkerUrl = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+        const showFallback = (message) => {
+          status.textContent = message || `${pdfTitle} could not be rendered here.`;
+          status.hidden = false;
+          if (!fallbackFrame.getAttribute("src")) {
+            fallbackFrame.setAttribute("src", fallbackFrame.dataset.fallbackSrc);
+          }
+          document.body.classList.add("pdf-native-fallback");
+        };
+
+        const renderLinks = async (page, viewport, layer) => {
+          layer.replaceChildren();
+          const annotations = await page.getAnnotations({ intent: "display" });
+
+          annotations.forEach((annotation) => {
+            const href = annotation.url || annotation.unsafeUrl;
+            if (annotation.subtype !== "Link" || !href || !annotation.rect) return;
+
+            const bounds = viewport.convertToViewportRectangle(annotation.rect);
+            const left = Math.min(bounds[0], bounds[2]);
+            const top = Math.min(bounds[1], bounds[3]);
+            const width = Math.abs(bounds[0] - bounds[2]);
+            const height = Math.abs(bounds[1] - bounds[3]);
+
+            const link = document.createElement("a");
+            link.className = "cv-pdf-link";
+            link.href = href;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.setAttribute("aria-label", href);
+            link.style.left = `${left}px`;
+            link.style.top = `${top}px`;
+            link.style.width = `${width}px`;
+            link.style.height = `${height}px`;
+            layer.append(link);
+          });
+        };
+
+        const renderPage = async (page, wrapper, canvas, linkLayer) => {
+          const baseViewport = page.getViewport({ scale: 1 });
+          const availableWidth = Math.max(300, viewer.clientWidth - 32);
+          const targetWidth = Math.min(1120, availableWidth);
+          const scale = targetWidth / baseViewport.width;
+          const viewport = page.getViewport({ scale });
+          const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+          const canvasWidth = Math.floor(viewport.width * pixelRatio);
+          const canvasHeight = Math.floor(viewport.height * pixelRatio);
+
+          wrapper.style.width = `${viewport.width}px`;
+          wrapper.style.height = `${viewport.height}px`;
+          canvas.width = canvasWidth;
+          canvas.height = canvasHeight;
+          canvas.style.width = `${viewport.width}px`;
+          canvas.style.height = `${viewport.height}px`;
+
+          const context = canvas.getContext("2d", { alpha: false });
+          context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
+          await page.render({ canvasContext: context, viewport }).promise;
+          await renderLinks(page, viewport, linkLayer);
+        };
+
+        try {
+          if (typeof pdfjsLib === "undefined") {
+            throw new Error("PDF.js did not load.");
+          }
+          pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorkerUrl;
+
+          const pdf = await pdfjsLib.getDocument({ url: pdfUrl, withCredentials: false }).promise;
+          status.hidden = true;
+
+          const pageEntries = [];
+          for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber += 1) {
+            const page = await pdf.getPage(pageNumber);
+            const wrapper = document.createElement("section");
+            const canvas = document.createElement("canvas");
+            const linkLayer = document.createElement("div");
+
+            wrapper.className = "cv-pdf-page";
+            wrapper.setAttribute("aria-label", `${pdfTitle} page ${pageNumber}`);
+            canvas.className = "cv-pdf-canvas";
+            linkLayer.className = "cv-pdf-link-layer";
+            wrapper.append(canvas, linkLayer);
+            pagesRoot.append(wrapper);
+            pageEntries.push({ page, wrapper, canvas, linkLayer });
+          }
+
+          let renderQueue = Promise.resolve();
+          let lastRenderWidth = 0;
+          const renderAll = () => {
+            const currentWidth = viewer.clientWidth;
+            if (Math.abs(currentWidth - lastRenderWidth) < 8) return;
+            lastRenderWidth = currentWidth;
+            renderQueue = renderQueue.then(async () => {
+              for (const entry of pageEntries) {
+                await renderPage(entry.page, entry.wrapper, entry.canvas, entry.linkLayer);
+              }
+            }).catch(() => showFallback(`${pdfTitle} could not be rendered here.`));
+          };
+
+          renderAll();
+          window.addEventListener("resize", () => {
+            window.clearTimeout(viewer.resizeTimer);
+            viewer.resizeTimer = window.setTimeout(renderAll, 180);
+          });
+        } catch (error) {
+          console.error(error);
+          showFallback(`${pdfTitle} could not be rendered here.`);
+        }
+      })();
+    </script>
   </body>
 </html>
