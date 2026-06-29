@@ -1,0 +1,28 @@
+---
+layout: compress
+---
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body class="cv-viewer-body">
+    {% include browser-upgrade.html %}
+
+    <main class="cv-viewer-main" aria-label="Curriculum vitae">
+      <iframe
+        class="cv-viewer-frame"
+        title="Lijun An CV"
+        src="{{ page.pdf_url }}">
+      </iframe>
+
+      <div class="cv-viewer-actions" aria-label="CV actions">
+        <a href="/" target="_self">Home</a>
+        <a href="{{ page.download_url }}">Download</a>
+      </div>
+    </main>
+  </body>
+</html>

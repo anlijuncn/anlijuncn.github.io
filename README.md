@@ -1,4 +1,4 @@
-# Lijun An Academic Homepage
+# Lijun An's Academic Homepage
 
 This repository hosts the source code for [www.anlijun.cn](https://www.anlijun.cn), the personal academic homepage of Lijun An.
 
@@ -7,7 +7,6 @@ This repository hosts the source code for [www.anlijun.cn](https://www.anlijun.c
 - Academic homepage built with Jekyll.
 - Google Scholar citation crawler in [google_scholar_crawler](./google_scholar_crawler).
 - GitHub Actions workflow that updates Google Scholar citation JSON on the `google-scholar-stats` branch.
-- A standalone Xiao Liu Ren page in [liuren](./liuren), based on [fyapeng/liuren](https://github.com/fyapeng/liuren/).
 
 ## Google Scholar Citations
 
@@ -49,4 +48,3 @@ Open [http://127.0.0.1:4000](http://127.0.0.1:4000).
 
 - The site was originally based on [RayeRen/acad-homepage.github.io](https://github.com/RayeRen/acad-homepage.github.io).
 - The theme is influenced by [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes) and [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io).
-- The Xiao Liu Ren page is based on [fyapeng/liuren](https://github.com/fyapeng/liuren/).
