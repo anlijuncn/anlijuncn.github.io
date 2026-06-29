@@ -199,6 +199,9 @@ h1:before, .anchor:before {
   --site-nav-hover: #4a4f54;
   --site-link: #224b8d;
   --site-link-hover: #183766;
+  --site-highlight-danger: #d90000;
+  --site-highlight-primary: #0047ff;
+  --site-highlight-accent: #ff6f00;
   --site-panel: #f7f7f7;
   --site-panel-border: #d8d8d8;
   --site-toggle-bg: #111111;
@@ -219,6 +222,9 @@ h1:before, .anchor:before {
   --site-nav-hover: #ffffff;
   --site-link: #8ab4ff;
   --site-link-hover: #c1d7ff;
+  --site-highlight-danger: #ff6b6b;
+  --site-highlight-primary: #73b7ff;
+  --site-highlight-accent: #ffb454;
   --site-panel: #171717;
   --site-panel-border: #3a3a3a;
   --site-toggle-bg: #ffffff;
@@ -329,6 +335,35 @@ body {
   color: var(--site-link-hover);
 }
 
+.highlight {
+  font-weight: 700;
+}
+
+.highlight-danger {
+  color: var(--site-highlight-danger);
+}
+
+.highlight-primary {
+  color: var(--site-highlight-primary);
+}
+
+.highlight-link,
+.page__content a.highlight-link {
+  color: var(--site-highlight-accent);
+  font-weight: 700;
+}
+
+.highlight-link:hover,
+.page__content a.highlight-link:hover {
+  color: var(--site-highlight-accent);
+  text-decoration: underline;
+}
+
+.visitor-caption {
+  color: var(--site-muted);
+  font-size: 0.9rem;
+}
+
 .greedy-nav a {
   color: var(--site-nav);
 }
@@ -415,6 +450,15 @@ hr,
 :root[data-theme="dark"] .author__urls {
   border-color: var(--site-border);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
+}
+
+:root[data-theme="dark"] .social-icons .fa-github,
+:root[data-theme="dark"] .social-icons .fa-github-alt,
+:root[data-theme="dark"] .social-icons .fa-github-square,
+:root[data-theme="dark"] .author__urls_sm .fa-github,
+:root[data-theme="dark"] .author__urls_sm .fa-github-alt,
+:root[data-theme="dark"] .author__urls_sm .fa-github-square {
+  color: #f2f2f2;
 }
 
 :root[data-theme="dark"] .author__urls:before {

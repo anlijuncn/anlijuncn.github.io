@@ -12,7 +12,7 @@ redirect_from:
 
 I am currently a postdoctoral researcher (supervisor: <a href="https://demonlab.org/members/jake">Jacob Vogel</a>) at DeMON Lab, Lund University, working closely with the <a href="https://biofinder.se/">BioFINDER community</a>. Before moving to Sweden, I completed my Ph.D. at the National University of Singapore under the supervision of <a href="https://sites.google.com/view/yeolab/thomas">Thomas Yeo</a>.<br><br>
 
-My research focuses on <span style="color:red; font-weight:bold;">neurodegenerative diseases</span>, with an emphasis on developing <span style="color:blue; font-weight:bold;">machine learning</span> models to analyze <span style="color:blue; font-weight:bold;">multiscale, multimodal</span> data, including brain imaging, proteomics, and genomics. My research lines are:
+My research focuses on <span class="highlight highlight-danger">neurodegenerative diseases</span>, with an emphasis on developing <span class="highlight highlight-primary">machine learning</span> models to analyze <span class="highlight highlight-primary">multiscale, multimodal</span> data, including brain imaging, proteomics, and genomics. My research lines are:
  <ol class="compact-list">
    <li>Automated diagnosis & differential biomarker discovery;</li>
    <li>Mechanism investigation of neurodegeneration & aging;</li>
@@ -28,18 +28,18 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
     <div class="ticker-move">
       <div>                                                                                                                      </div>
       <div> ========================================================================================= </div>
-        <div>06/2026, Chunzhi's work about <a href="https://ieeexplore.ieee.org/abstract/document/11540197" style="color: #FF6F00">fMRI self-supervised learning </a> is out in IEEE Transactions on Neural Systems and Rehabilitation Engineering!</div>
-      <div>06/2026, Lina's work about <a href="https://www.nature.com/articles/s43587-026-01123-0" style="color: #FF6F00">Proteomics signatures of APOE genetic variants</a> is out in Nature Aging!</div>
-      <div>04/2026, Chunzhi's work about <a href="https://www.the-innovation.org/article/doi/10.59717/j.xinn-med.2026.100214" style="color: #FF6F00">functional interaction patterns from solely circadian rhythm disturbance to circadian rhythm sleep disorder</a> is out in The Innovation Medicine!</div>
-      <div>03/2026, My work about <a href="https://www.nature.com/articles/s41591-026-04303-y" style="color: #FF6F00">AI-proteomics for diagnosing multiple neurodegenerative diseases</a> is out in Nature Medicine!</div>
-      <div>03/2026, I got <a href="https://adpd.kenes.com/junior-faculty-awards/" style="color: #FF6F00"> AD/PD Junior Faculty Award!</a> </div>
-      <div>08/2025, Zhang Chen's work about <a href="https://doi.org/10.1002/hbm.70280" style="color: #FF6F00"> cross-dataset evaluation of dementia progression modeling </a> is out in Human Brain Mapping!</div>
-      <div>07/2025, I gave a talk at AAIC about our <a href="https://www.medrxiv.org/content/10.1101/2025.06.27.25330344v1" style="color: #FF6F00"> AI-proteomics project</a> </div>
-      <div>07/2025, GNPC, <a href="https://www.nature.com/articles/s41591-025-03834-0" style="color: #FF6F00">the world's largest neuroproteome dataset for neurodegenerative diseases </a> is out in Nature Medicine! </div>
-      <div>07/2025, Leon, Csaba & Shaoshi's work about <a href="https://www.nature.com/articles/s41586-025-09250-1" style="color: #FF6F00">balancing scanning time and sample size of fMRI experimemts</a> is out in Nature!</div>
-      <div>04/2025, I got <a href="https://aaic.alz.org/" style="color: #FF6F00"> AAIC Conference Fellowship!</a> </div>
-      <div>03/2025, I got <a href="https://www.ukbiobank.ac.uk/enable-your-research/research-analysis-platform/the-uk-biobank-platform-credits-programme" style="color: #FF6F00">￡1000 UKB-RAP credits!</a> </div>
-      <div>02/2025, Winnie's work about <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2411245122" style="color: #FF6F00">protective role of parenthood on brain aging</a> is out in PNAS!</div>
+        <div>06/2026, Chunzhi's work about <a class="highlight-link" href="https://ieeexplore.ieee.org/abstract/document/11540197">fMRI self-supervised learning </a> is out in IEEE Transactions on Neural Systems and Rehabilitation Engineering!</div>
+      <div>06/2026, Lina's work about <a class="highlight-link" href="https://www.nature.com/articles/s43587-026-01123-0">Proteomics signatures of APOE genetic variants</a> is out in Nature Aging!</div>
+      <div>04/2026, Chunzhi's work about <a class="highlight-link" href="https://www.the-innovation.org/article/doi/10.59717/j.xinn-med.2026.100214">functional interaction patterns from solely circadian rhythm disturbance to circadian rhythm sleep disorder</a> is out in The Innovation Medicine!</div>
+      <div>03/2026, My work about <a class="highlight-link" href="https://www.nature.com/articles/s41591-026-04303-y">AI-proteomics for diagnosing multiple neurodegenerative diseases</a> is out in Nature Medicine!</div>
+      <div>03/2026, I got <a class="highlight-link" href="https://adpd.kenes.com/junior-faculty-awards/"> AD/PD Junior Faculty Award!</a> </div>
+      <div>08/2025, Zhang Chen's work about <a class="highlight-link" href="https://doi.org/10.1002/hbm.70280"> cross-dataset evaluation of dementia progression modeling </a> is out in Human Brain Mapping!</div>
+      <div>07/2025, I gave a talk at AAIC about our <a class="highlight-link" href="https://www.medrxiv.org/content/10.1101/2025.06.27.25330344v1"> AI-proteomics project</a> </div>
+      <div>07/2025, GNPC, <a class="highlight-link" href="https://www.nature.com/articles/s41591-025-03834-0">the world's largest neuroproteome dataset for neurodegenerative diseases </a> is out in Nature Medicine! </div>
+      <div>07/2025, Leon, Csaba & Shaoshi's work about <a class="highlight-link" href="https://www.nature.com/articles/s41586-025-09250-1">balancing scanning time and sample size of fMRI experimemts</a> is out in Nature!</div>
+      <div>04/2025, I got <a class="highlight-link" href="https://aaic.alz.org/"> AAIC Conference Fellowship!</a> </div>
+      <div>03/2025, I got <a class="highlight-link" href="https://www.ukbiobank.ac.uk/enable-your-research/research-analysis-platform/the-uk-biobank-platform-credits-programme">￡1000 UKB-RAP credits!</a> </div>
+      <div>02/2025, Winnie's work about <a class="highlight-link" href="https://www.pnas.org/doi/abs/10.1073/pnas.2411245122">protective role of parenthood on brain aging</a> is out in PNAS!</div>
     </div>
   </div>
 </div>
@@ -70,7 +70,7 @@ My research focuses on <span style="color:red; font-weight:bold;">neurodegenerat
       src="//mapmyvisitors.com/map.js?d=tcKX-Xhb2sQXUPK_ki20J-QWpVMNo4--me1aIdPeSuc&cl=ffffff&w=a">
   </script>
   </div>
-  <p style="font-size: 0.9rem; color: #666;">Click the map to see live visitor stats</p>
+  <p class="visitor-caption">Click the map to see live visitor stats</p>
 </div>
 
   
