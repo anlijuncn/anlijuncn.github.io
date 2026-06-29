@@ -14,14 +14,19 @@ const palaceInterpretations = {
     '小吉': { fortune: '吉', fortuneClass: 'good', meaning: '小有喜事，合作顺利。', analysis: '此为吉卦，虽不如速喜来得快，但代表事情正在朝好的方向发展。特别有利于合作、合伙项目，能得到贵人相助。事情虽有小成，但已是很好的开端，未来可期。' },
     '空亡': { fortune: '凶', fortuneClass: 'bad', meaning: '事多虚空，劳而无功。', analysis: '此为凶卦，代表空虚、失落和徒劳无功。所问之事可能没有结果，或者之前的努力付诸东流。信息不实，希望渺茫。此时不宜抱有太大期望，应重新审视计划，或暂时搁置。' }
 };
+const LIGHT_THEME_START_HOUR = 7;
+const DARK_THEME_START_HOUR = 19;
 
 document.addEventListener('DOMContentLoaded', function() {
+    initializeTheme();
     bindControls();
     runTimeCalculation();
     setRandomNumberInputs();
 });
 
 function bindControls() {
+    document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+
     document.querySelectorAll('[data-tab-target]').forEach(function(tabButton) {
         tabButton.addEventListener('click', function() {
             openTab(tabButton.dataset.tabTarget);
@@ -30,6 +35,35 @@ function bindControls() {
 
     document.getElementById('time-recalculate').addEventListener('click', runTimeCalculation);
     document.getElementById('number-recalculate').addEventListener('click', runNumberCalculation);
+}
+
+function initializeTheme() {
+    applyTheme(getThemeForTime(new Date()));
+}
+
+function getThemeForTime(date) {
+    const hour = date.getHours();
+    return hour >= LIGHT_THEME_START_HOUR && hour < DARK_THEME_START_HOUR ? 'light' : 'dark';
+}
+
+function toggleTheme() {
+    const currentTheme = document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
+    applyTheme(currentTheme === 'dark' ? 'light' : 'dark');
+}
+
+function applyTheme(theme) {
+    document.documentElement.dataset.theme = theme;
+    updateThemeToggle(theme);
+}
+
+function updateThemeToggle(theme) {
+    const toggle = document.getElementById('theme-toggle');
+    const icon = document.getElementById('theme-toggle-icon');
+    const nextThemeName = theme === 'dark' ? '白色背景' : '黑色背景';
+
+    toggle.setAttribute('aria-label', `切换为${nextThemeName}`);
+    toggle.title = `切换为${nextThemeName}`;
+    icon.textContent = theme === 'dark' ? '白' : '黑';
 }
 
 function openTab(tabName) {
