@@ -10,7 +10,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently a postdoctoral researcher (supervisor: <a href="https://demonlab.org/members/jake">Jacob Vogel</a>) at DeMON Lab, Lund University, working closely with the <a href="https://biofinder.se/">BioFINDER community</a>. Before moving to Sweden, I completed my Ph.D. at the National University of Singapore under the supervision of <a href="https://sites.google.com/view/yeolab/thomas">Thomas Yeo</a>.<br><br>
+I am now a postdoctoral researcher (supervisor: <a href="https://demonlab.org/members/jake">Jacob Vogel</a>) at DeMON Lab, Lund University, working closely with the <a href="https://biofinder.se/">BioFINDER community</a>. Before moving to Sweden, I completed my Ph.D. at the National University of Singapore under the supervision of <a href="https://sites.google.com/view/yeolab/thomas">Thomas Yeo</a>.<br><br>
 
 My research focuses on <span class="highlight highlight-danger">neurodegenerative diseases</span>, with an emphasis on developing <span class="highlight highlight-primary">machine learning</span> models to analyze <span class="highlight highlight-primary">multiscale, multimodal</span> data, including brain imaging, proteomics, and genomics. My research lines are:
  <ol class="compact-list">
@@ -29,7 +29,7 @@ My research focuses on <span class="highlight highlight-danger">neurodegenerativ
       <div>                                                                                                                      </div>
       <div> ========================================================================================= </div>
         <div>06/2026, Chunzhi's work about <a class="highlight-link" href="https://ieeexplore.ieee.org/abstract/document/11540197">fMRI self-supervised learning </a> is out in IEEE Transactions on Neural Systems and Rehabilitation Engineering!</div>
-      <div>06/2026, Lina's work about <a class="highlight-link" href="https://www.nature.com/articles/s43587-026-01123-0">Proteomics signatures of APOE genetic variants</a> is out in Nature Aging!</div>
+      <div>06/2026, Lina's work about <a class="highlight-link" href="https://www.nature.com/articles/s43587-026-01123-0">proteomics signatures of APOE genetic variants</a> is out in Nature Aging!</div>
       <div>04/2026, Chunzhi's work about <a class="highlight-link" href="https://www.the-innovation.org/article/doi/10.59717/j.xinn-med.2026.100214">functional interaction patterns from solely circadian rhythm disturbance to circadian rhythm sleep disorder</a> is out in The Innovation Medicine!</div>
       <div>03/2026, My work about <a class="highlight-link" href="https://www.nature.com/articles/s41591-026-04303-y">AI-proteomics for diagnosing multiple neurodegenerative diseases</a> is out in Nature Medicine!</div>
       <div>03/2026, I got <a class="highlight-link" href="https://adpd.kenes.com/junior-faculty-awards/"> AD/PD Junior Faculty Award!</a> </div>
