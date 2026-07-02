@@ -28,7 +28,8 @@ My research focuses on <span class="highlight highlight-danger">neurodegenerativ
     <div class="ticker-move">
       <div>                                                                                                                      </div>
       <div> ========================================================================================= </div>
-        <div>06/2026, Chunzhi's work about <a class="highlight-link" href="https://ieeexplore.ieee.org/abstract/document/11540197">fMRI self-supervised learning </a> is out in IEEE Transactions on Neural Systems and Rehabilitation Engineering!</div>
+      <div>07/2026, I got my first grant about <a class="highlight-link" href="https://www.biswasfamilyfoundation.org/science/fast-grants">agentic AI for biomarker discovery </a>, funded by Biwas Family Foundation!</div>  
+      <div>06/2026, Chunzhi's work about <a class="highlight-link" href="https://ieeexplore.ieee.org/abstract/document/11540197">fMRI self-supervised learning </a> is out in IEEE Transactions on Neural Systems and Rehabilitation Engineering!</div>
       <div>06/2026, Lina's work about <a class="highlight-link" href="https://www.nature.com/articles/s43587-026-01123-0">proteomics signatures of APOE genetic variants</a> is out in Nature Aging!</div>
       <div>04/2026, Chunzhi's work about <a class="highlight-link" href="https://www.the-innovation.org/article/doi/10.59717/j.xinn-med.2026.100214">functional interaction patterns from solely circadian rhythm disturbance to circadian rhythm sleep disorder</a> is out in The Innovation Medicine!</div>
       <div>03/2026, My work about <a class="highlight-link" href="https://www.nature.com/articles/s41591-026-04303-y">AI-proteomics for diagnosing multiple neurodegenerative diseases</a> is out in Nature Medicine!</div>
