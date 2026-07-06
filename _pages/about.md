@@ -34,13 +34,6 @@ My research focuses on <span class="highlight highlight-danger">neurodegenerativ
       <div>04/2026, Chunzhi's work about <a class="highlight-link" href="https://www.the-innovation.org/article/doi/10.59717/j.xinn-med.2026.100214">functional interaction patterns from solely circadian rhythm disturbance to circadian rhythm sleep disorder</a> is out in The Innovation Medicine!</div>
       <div>03/2026, My work about <a class="highlight-link" href="https://www.nature.com/articles/s41591-026-04303-y">AI-proteomics for diagnosing multiple neurodegenerative diseases</a> is out in Nature Medicine!</div>
       <div>03/2026, I got <a class="highlight-link" href="https://adpd.kenes.com/junior-faculty-awards/"> AD/PD Junior Faculty Award!</a> </div>
-      <div>08/2025, Zhang Chen's work about <a class="highlight-link" href="https://doi.org/10.1002/hbm.70280"> cross-dataset evaluation of dementia progression modeling </a> is out in Human Brain Mapping!</div>
-      <div>07/2025, I gave a talk at AAIC about our <a class="highlight-link" href="https://www.medrxiv.org/content/10.1101/2025.06.27.25330344v1"> AI-proteomics project</a> </div>
-      <div>07/2025, GNPC, <a class="highlight-link" href="https://www.nature.com/articles/s41591-025-03834-0">the world's largest neuroproteome dataset for neurodegenerative diseases </a> is out in Nature Medicine! </div>
-      <div>07/2025, Leon, Csaba & Shaoshi's work about <a class="highlight-link" href="https://www.nature.com/articles/s41586-025-09250-1">balancing scanning time and sample size of fMRI experimemts</a> is out in Nature!</div>
-      <div>04/2025, I got <a class="highlight-link" href="https://aaic.alz.org/"> AAIC Conference Fellowship!</a> </div>
-      <div>03/2025, I got <a class="highlight-link" href="https://www.ukbiobank.ac.uk/enable-your-research/research-analysis-platform/the-uk-biobank-platform-credits-programme">￡1000 UKB-RAP credits!</a> </div>
-      <div>02/2025, Winnie's work about <a class="highlight-link" href="https://www.pnas.org/doi/abs/10.1073/pnas.2411245122">protective role of parenthood on brain aging</a> is out in PNAS!</div>
     </div>
   </div>
 </div>
