@@ -1,0 +1,351 @@
+{
+  "container_type": "Author",
+  "filled": [
+    "basics",
+    "indices",
+    "counts",
+    "publications"
+  ],
+  "source": "google_scholar_html",
+  "name": "Lijun An",
+  "affiliation": "Postdoc, Lund University",
+  "email_domain": "med.lu.se - Homepage",
+  "interests": [
+    "Neurodegenerative Diseases",
+    "Machine Learning",
+    "Multiomics",
+    "Brain Imaging",
+    "Heterogeneity/Harmonization"
+  ],
+  "profile_links": [
+    {
+      "text": "Other names",
+      "url": "javascript:void(0)"
+    },
+    {
+      "text": "Lund University",
+      "url": "https://scholar.google.com/citations?view_op=view_org&hl=en&org=11869288113056425402"
+    },
+    {
+      "text": "Homepage",
+      "url": "https://anlijun.cn/"
+    },
+    {
+      "text": "Neurodegenerative Diseases",
+      "url": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:neurodegenerative_diseases"
+    },
+    {
+      "text": "Machine Learning",
+      "url": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:machine_learning"
+    },
+    {
+      "text": "Multiomics",
+      "url": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:multiomics"
+    },
+    {
+      "text": "Brain Imaging",
+      "url": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:brain_imaging"
+    },
+    {
+      "text": "Heterogeneity/Harmonization",
+      "url": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:heterogeneity_harmonization"
+    }
+  ],
+  "citedby": 1017,
+  "citedby5y": 1008,
+  "hindex": 12,
+  "hindex5y": 12,
+  "i10index": 13,
+  "i10index5y": 13,
+  "cites_per_year": {
+    "2020": 5,
+    "2021": 27,
+    "2022": 42,
+    "2023": 91,
+    "2024": 172,
+    "2025": 320,
+    "2026": 354
+  },
+  "publications": {
+    "La_luGsAAAAJ:HDshCWvjkbEC": {
+      "author_pub_id": "La_luGsAAAAJ:HDshCWvjkbEC",
+      "num_citations": 0,
+      "bib": {
+        "title": "Self-supervised Representation Learning for Dynamic Functional Connectivity with Subject-wise and Temporal Contrasts",
+        "author": "J Zhu, L An, H Zhu, F Jiang, S Liu, B Wei, C Yi",
+        "venue": "IEEE Transactions on Neural Systems and Rehabilitation Engineering , 2026",
+        "pub_year": "2026"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:HDshCWvjkbEC"
+    },
+    "La_luGsAAAAJ:hFOr9nPyWt4C": {
+      "author_pub_id": "La_luGsAAAAJ:hFOr9nPyWt4C",
+      "num_citations": 0,
+      "bib": {
+        "title": "Widespread use of invalid statistical tests in biomedical machine learning",
+        "author": "T Zeng, H Li, S Zhang, YQ Tan, F Tian, C Orban, L An, W Che, J Cheng, ...",
+        "venue": "bioRxiv, 2026.05. 17.724301 , 2026",
+        "pub_year": "2026"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:hFOr9nPyWt4C"
+    },
+    "La_luGsAAAAJ:qUcmZB5y_30C": {
+      "author_pub_id": "La_luGsAAAAJ:qUcmZB5y_30C",
+      "num_citations": 5,
+      "bib": {
+        "title": "Proteomic signatures of the APOE ε 4 and APOE ε 2 genetic variants and Alzheimer’s disease",
+        "author": "L Lu, A Pichet Binette, I Hristovska, S Janelidze, B Smets, ...",
+        "venue": "Nature Aging, 1-20 , 2026",
+        "pub_year": "2026"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:qUcmZB5y_30C"
+    },
+    "La_luGsAAAAJ:-f6ydRqryjwC": {
+      "author_pub_id": "La_luGsAAAAJ:-f6ydRqryjwC",
+      "num_citations": 0,
+      "bib": {
+        "title": "Functional interaction pattern from solely circadian rhythm disturbance to circadian rhythm sleep disorder",
+        "author": "H Jiang, T Tan, L An, Z Chen, Y Cheng, H Gui, B Wei, C Yi",
+        "venue": "The Innovation Medicine 4 (2), 100214-1-100214-12 , 2026",
+        "pub_year": "2026"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:-f6ydRqryjwC"
+    },
+    "La_luGsAAAAJ:hC7cP41nSMkC": {
+      "author_pub_id": "La_luGsAAAAJ:hC7cP41nSMkC",
+      "num_citations": 5,
+      "bib": {
+        "title": "A deep joint-learning proteomics model for diagnosis of six conditions associated with dementia",
+        "author": "L An, A Pichet Binette, I Hristovska, G Vilkaite, Y Xiao, R Zendehdel, ...",
+        "venue": "Nature Medicine, 1-13 , 2026",
+        "pub_year": "2026"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:hC7cP41nSMkC"
+    },
+    "La_luGsAAAAJ:Zph67rFs4hoC": {
+      "author_pub_id": "La_luGsAAAAJ:Zph67rFs4hoC",
+      "num_citations": 8,
+      "bib": {
+        "title": "Brain network dynamics determine tau presence while regional vulnerability governs tau load in Alzheimer’s disease",
+        "author": "Y Xiao, N Spotorno, L An, V Bazinet, JY Hansen, O Strandberg, G Shafiei, ...",
+        "venue": "Research Square, rs. 3. rs-8687892 , 2026",
+        "pub_year": "2026"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:Zph67rFs4hoC"
+    },
+    "La_luGsAAAAJ:QIV2ME_5wuYC": {
+      "author_pub_id": "La_luGsAAAAJ:QIV2ME_5wuYC",
+      "num_citations": 0,
+      "bib": {
+        "title": "Mapping the circulating proteome across neurodegeneration: A harmonized, consortium-scale framework for uncovering molecular pathophysiology",
+        "author": "CA Finney, L An, LM Winchester, J Vogel, HM Wilkins, JM Burns, ...",
+        "venue": "bioRxiv , 2025",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:QIV2ME_5wuYC"
+    },
+    "La_luGsAAAAJ:mVmsd5A6BfQC": {
+      "author_pub_id": "La_luGsAAAAJ:mVmsd5A6BfQC",
+      "num_citations": 0,
+      "bib": {
+        "title": "Coordinated multi‐cellular responses to Alzheimer's disease pathology reveal sex‐specific resilience signatures",
+        "author": "G Vilkaite, L An, Y Xiao, I Hristovska, C Gaiteri, AP Binette, ...",
+        "venue": "Alzheimer's & Dementia 21, e104816 , 2025",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:mVmsd5A6BfQC"
+    },
+    "La_luGsAAAAJ:9ZlFYXVOiuMC": {
+      "author_pub_id": "La_luGsAAAAJ:9ZlFYXVOiuMC",
+      "num_citations": 0,
+      "bib": {
+        "title": "The geno-biomechanical similarity between functional and idiopathic scoliosis from kinematic, muscle activation, vertebral loading and the pathological gene expression perspectives",
+        "author": "B Wei, Z Xu, J Zhu, K Zhu, H Wang, C Gan, J Duan, Z Jiang, X Wang, ...",
+        "venue": "medRxiv, 2025.11. 08.25339358 , 2025",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:9ZlFYXVOiuMC"
+    },
+    "La_luGsAAAAJ:4TOpqqG69KYC": {
+      "author_pub_id": "La_luGsAAAAJ:4TOpqqG69KYC",
+      "num_citations": 112,
+      "bib": {
+        "title": "Longer scans boost prediction and cut costs in brain-wide association studies",
+        "author": "LQR Ooi, C Orban, S Zhang, TE Nichols, TWK Tan, R Kong, S Marek, ...",
+        "venue": "Nature 644 (8077), 731-740 , 2025",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:4TOpqqG69KYC"
+    },
+    "La_luGsAAAAJ:_kc_bZDykSQC": {
+      "author_pub_id": "La_luGsAAAAJ:_kc_bZDykSQC",
+      "num_citations": 138,
+      "bib": {
+        "title": "The Global Neurodegeneration Proteomics Consortium: biomarker and drug target discovery for common neurodegenerative diseases and aging",
+        "author": "F Imam, R Saloner, JW Vogel, V Krish, G Abdel-Azim, M Ali, L An, ...",
+        "venue": "Nature medicine 31 (8), 2556-2566 , 2025",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:_kc_bZDykSQC"
+    },
+    "La_luGsAAAAJ:UebtZRa9Y70C": {
+      "author_pub_id": "La_luGsAAAAJ:UebtZRa9Y70C",
+      "num_citations": 10,
+      "bib": {
+        "title": "Cross‐Dataset Evaluation of Dementia Longitudinal Progression Prediction Models",
+        "author": "C Zhang, L An, N Wulan, KN Nguyen, C Orban, P Chen, C Chen, JH Zhou, ...",
+        "venue": "Human Brain Mapping 46 (11), e70280 , 2025",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:UebtZRa9Y70C"
+    },
+    "La_luGsAAAAJ:WF5omc3nYNoC": {
+      "author_pub_id": "La_luGsAAAAJ:WF5omc3nYNoC",
+      "num_citations": 16,
+      "bib": {
+        "title": "Protective role of parenthood on age-related brain function in mid-to late-life",
+        "author": "ER Orchard, S Chopra, LQR Ooi, P Chen, L An, SD Jamadar, BTT Yeo, ...",
+        "venue": "Proceedings of the National Academy of Sciences 122 (9), e2411245122 , 2025",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:WF5omc3nYNoC"
+    },
+    "La_luGsAAAAJ:YsMSGLbcyi4C": {
+      "author_pub_id": "La_luGsAAAAJ:YsMSGLbcyi4C",
+      "num_citations": 15,
+      "bib": {
+        "title": "DeepResBat: Deep residual batch harmonization accounting for covariate distribution differences",
+        "author": "L An, C Zhang, N Wulan, S Zhang, P Chen, F Ji, KK Ng, C Chen, JH Zhou, ...",
+        "venue": "Medical Image Analysis 99, 103354 , 2025",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:YsMSGLbcyi4C"
+    },
+    "La_luGsAAAAJ:Se3iqnhoufwC": {
+      "author_pub_id": "La_luGsAAAAJ:Se3iqnhoufwC",
+      "num_citations": 51,
+      "bib": {
+        "title": "Generalizable and replicable brain-based predictions of cognitive functioning across common psychiatric illness",
+        "author": "S Chopra, E Dhamala, C Lawhead, JA Ricard, ER Orchard, L An, P Chen, ...",
+        "venue": "Science advances 10 (45), eadn1862 , 2024",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:Se3iqnhoufwC"
+    },
+    "La_luGsAAAAJ:W7OEmFMy1HYC": {
+      "author_pub_id": "La_luGsAAAAJ:W7OEmFMy1HYC",
+      "num_citations": 12,
+      "bib": {
+        "title": "Translating phenotypic prediction models from big to small anatomical MRI data using meta-matching",
+        "author": "N Wulan, L An, C Zhang, R Kong, P Chen, D Bzdok, SB Eickhoff, ...",
+        "venue": "Imaging Neuroscience 2, imag-2-00251 , 2024",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:W7OEmFMy1HYC"
+    },
+    "La_luGsAAAAJ:Y0pCki6q_DkC": {
+      "author_pub_id": "La_luGsAAAAJ:Y0pCki6q_DkC",
+      "num_citations": 20,
+      "bib": {
+        "title": "Multilayer meta-matching: Translating phenotypic prediction models from multiple datasets to small data",
+        "author": "P Chen, L An, N Wulan, C Zhang, S Zhang, LQR Ooi, R Kong, J Chen, ...",
+        "venue": "Imaging Neuroscience 2, imag-2-00233 , 2024",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:Y0pCki6q_DkC"
+    },
+    "La_luGsAAAAJ:Tyk-4Ss8FVUC": {
+      "author_pub_id": "La_luGsAAAAJ:Tyk-4Ss8FVUC",
+      "num_citations": 83,
+      "bib": {
+        "title": "In vivo whole-cortex marker of excitation-inhibition ratio indexes cortical maturation and cognitive ability in youth",
+        "author": "S Zhang, B Larsen, VJ Sydnor, T Zeng, L An, X Yan, R Kong, X Kong, ...",
+        "venue": "Proceedings of the National Academy of Sciences 121 (23), e2318641121 , 2024",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:Tyk-4Ss8FVUC"
+    },
+    "La_luGsAAAAJ:KlAtU1dfN6UC": {
+      "author_pub_id": "La_luGsAAAAJ:KlAtU1dfN6UC",
+      "num_citations": 0,
+      "bib": {
+        "title": "Deep Learning for Anatomical Brain MRI Harmonization",
+        "author": "A Lijun",
+        "venue": "PQDT-Global , 2024",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:KlAtU1dfN6UC"
+    },
+    "La_luGsAAAAJ:IjCSPb-OGe4C": {
+      "author_pub_id": "La_luGsAAAAJ:IjCSPb-OGe4C",
+      "num_citations": 103,
+      "bib": {
+        "title": "Homotopic local-global parcellation of the human cerebral cortex from resting-state functional connectivity",
+        "author": "X Yan, R Kong, A Xue, Q Yang, C Orban, L An, AJ Holmes, X Qian, ...",
+        "venue": "NeuroImage 273, 120010 , 2023",
+        "pub_year": "2023"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:IjCSPb-OGe4C"
+    },
+    "La_luGsAAAAJ:qjMakFHDy7sC": {
+      "author_pub_id": "La_luGsAAAAJ:qjMakFHDy7sC",
+      "num_citations": 43,
+      "bib": {
+        "title": "Goal-specific brain MRI harmonization",
+        "author": "L An, J Chen, P Chen, C Zhang, T He, C Chen, JH Zhou, BTT Yeo, ...",
+        "venue": "NeuroImage 263, 119570 , 2022",
+        "pub_year": "2022"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:qjMakFHDy7sC"
+    },
+    "La_luGsAAAAJ:u-x6o8ySG0sC": {
+      "author_pub_id": "La_luGsAAAAJ:u-x6o8ySG0sC",
+      "num_citations": 123,
+      "bib": {
+        "title": "Meta-matching as a simple framework to translate phenotypic predictive models from big to small data",
+        "author": "T He, L An, P Chen, J Chen, J Feng, D Bzdok, AJ Holmes, SB Eickhoff, ...",
+        "venue": "Nature neuroscience 25 (6), 795-804 , 2022",
+        "pub_year": "2022"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:u-x6o8ySG0sC"
+    },
+    "La_luGsAAAAJ:u5HHmVD_uO8C": {
+      "author_pub_id": "La_luGsAAAAJ:u5HHmVD_uO8C",
+      "num_citations": 273,
+      "bib": {
+        "title": "Predicting Alzheimer's disease progression using deep recurrent neural networks",
+        "author": "M Nguyen, T He, L An, DC Alexander, J Feng, BTT Yeo, ...",
+        "venue": "NeuroImage 222, 117203 , 2020",
+        "pub_year": "2020"
+      },
+      "filled": false,
+      "source": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=La_luGsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=La_luGsAAAAJ:u5HHmVD_uO8C"
+    }
+  },
+  "updated": "2026-08-10T08:34:33.630730+00:00",
+  "stale": true,
+  "stale_reason": "curl_cffi: HTTP 403 for url https://scholar.google.com/citations?user=La_luGsAAAAJ&hl=en&view_op=list_works&sortby=pubdate&pagesize=100; httpx: Client error '403 Forbidden' for url 'https://scholar.google.com/citations?user=La_luGsAAAAJ&hl=en&view_op=list_works&sortby=pubdate&pagesize=100'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403",
+  "stale_updated": "2026-08-31T08:17:22.322081+00:00"
+}
