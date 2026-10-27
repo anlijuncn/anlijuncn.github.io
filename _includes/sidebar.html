@@ -1,14 +1,68 @@
-{% if page.author_profile or layout.author_profile or page.sidebar %}
-  <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
-  {% if page.sidebar %}
-    {% for s in page.sidebar %}
-      {% if s.image %}
-        <img src= "{{ s.image }}" alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
+{% assign author = site.author %}
+{% assign home_url = '/' | relative_url %}
+
+<div class="side-column">
+  <div class="side-top">
+    <a class="profile-link" href="{{ home_url }}" target="_self">
+      <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" class="profile-photo" width="110" height="110">
+    </a>
+
+    <h1 class="profile-name">{{ author.name }}</h1>
+    {% if author.bio %}<p class="affiliation-info">{{ author.bio }}</p>{% endif %}
+
+    <div class="contact-info">
+      {% if author.email %}
+        <p class="contact-info-entry"><strong>Email</strong> <a href="mailto:{{ author.email }}">{{ author.email }}</a></p>
       {% endif %}
-      {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
-      {% if s.text %}{{ s.text | markdownify }}{% endif %}
-    {% endfor %}
-  {% endif %}
+      {% if author.googlescholar %}
+        <p class="contact-info-entry"><strong>Google Scholar</strong> <a href="{{ author.googlescholar }}">{{ author.name }}</a></p>
+      {% endif %}
+      {% if author.github %}
+        <p class="contact-info-entry"><strong>GitHub</strong> <a href="https://github.com/{{ author.github }}">{{ author.github }}</a></p>
+      {% endif %}
+      {% if author.linkedin %}
+        <p class="contact-info-entry"><strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/{{ author.linkedin }}">{{ author.linkedin }}</a></p>
+      {% endif %}
+      {% if author.twitter %}
+        <p class="contact-info-entry"><strong>Twitter</strong> <a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a></p>
+      {% endif %}
+    </div>
+
+    <nav class="sidebar-nav" aria-label="Site">
+      <div class="nav-buttons">
+        {% for link in site.data.navigation.sections %}
+          <a href="{{ home_url }}#{{ link.section }}" class="nav-link{% if forloop.first %} active{% endif %}" data-section="{{ link.section }}" target="_self">{{ link.title }}</a>
+        {% endfor %}
+      </div>
+      <div class="nav-buttons nav-buttons--pages">
+        {% for link in site.data.navigation.pages %}
+          <a href="{{ link.url | relative_url }}" class="nav-link">{{ link.title }}</a>
+        {% endfor %}
+      </div>
+    </nav>
+
+    <button type="button" id="site-theme-toggle" class="site-theme-toggle">
+      <span class="theme-icon theme-icon--moon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" focusable="false">
+          <path d="M21 14.8A8.2 8.2 0 0 1 9.2 3 9.2 9.2 0 1 0 21 14.8Z"></path>
+        </svg>
+      </span>
+      <span class="theme-icon theme-icon--sun" aria-hidden="true">
+        <svg viewBox="0 0 24 24" focusable="false">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+        </svg>
+      </span>
+      <span class="site-theme-toggle__label">Night mode</span>
+    </button>
   </div>
-{% endif %}
+
+  <footer class="site-footer">
+    <p>
+      © {{ site.time | date: '%Y' }} {{ author.name }}. All rights reserved.<br>
+      Built with <a href="https://jekyllrb.com/">Jekyll</a>.<br>
+      Layout inspired by <a href="https://tingying-he.github.io/">Tingying He</a>.<br>
+      Last updated: {{ site.time | date: '%B %Y' }}.
+    </p>
+  </footer>
+</div>

@@ -1,7 +1,3 @@
----
-layout: compress
----
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -10,31 +6,14 @@ layout: compress
   </head>
 
   <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
-    <div id="main" role="main">
+    <div class="container">
       {% include sidebar.html %}
-    
-      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-        <div class="page__inner-wrap">
-          <section class="page__content" itemprop="text">
-            {{ content }}
-          </section>
-        </div>
-      </article>
+
+      <main class="main-column" id="main">
+        {{ content }}
+      </main>
     </div>
 
     {% include scripts.html %}
-
-<div class="footer_site">
-<hr/>
-<div class="footer_copyright">
-  © 2025 Lijun An | Modifed based on: <a href="https://github.com/RayeRen/acad-homepage.github.io">RayeRen's repo
-  </a>
-</div>
-</div>
   </body>
 </html>

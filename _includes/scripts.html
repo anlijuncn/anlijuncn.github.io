@@ -1,5 +1,4 @@
-<script src="assets/js/main.min.js"></script>
-<script src="assets/js/site-theme.js"></script>
+<script src="{{ '/assets/js/site.js' | relative_url }}"></script>
 
-{% include analytics.html %}
+{% if site.google_analytics_id %}{% include analytics.html %}{% endif %}
 {% include fetch_google_scholar_stats.html %}

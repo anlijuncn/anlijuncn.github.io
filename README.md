@@ -40,11 +40,15 @@ Open [http://127.0.0.1:4000](http://127.0.0.1:4000).
 ## Maintenance Notes
 
 - Main page content lives in [_pages/about.md](./_pages/about.md).
-- Navigation lives in [_data/navigation.yml](./_data/navigation.yml).
+- Sidebar navigation lives in [_data/navigation.yml](./_data/navigation.yml): `sections` scroll to a section of the home page, `pages` link to other pages.
+- Styles live in [assets/css/main.css](./assets/css/main.css) (plain CSS; colors are custom properties at the top, with a `[data-theme="dark"]` variant).
+- Day/night switching, sidebar section highlighting and the News ticker live in [assets/js/site.js](./assets/js/site.js).
+- News items are the `<li>` entries inside the `news-ticker` block of [_pages/about.md](./_pages/about.md), newest first.
+- The 小六壬 page is self-contained in [liuren](./liuren).
 - Google Scholar fetching logic lives in [google_scholar_crawler/main.py](./google_scholar_crawler/main.py).
 - Citation display logic lives in [_includes/fetch_google_scholar_stats.html](./_includes/fetch_google_scholar_stats.html).
 
 ## Acknowledgements
 
-- The site was originally based on [RayeRen/acad-homepage.github.io](https://github.com/RayeRen/acad-homepage.github.io).
-- The theme is influenced by [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes) and [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io).
+- The current layout is inspired by [Tingying He's homepage](https://tingying-he.github.io/).
+- The site was originally based on [RayeRen/acad-homepage.github.io](https://github.com/RayeRen/acad-homepage.github.io), influenced by [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes) and [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io).

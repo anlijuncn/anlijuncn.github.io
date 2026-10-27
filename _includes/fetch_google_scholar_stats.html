@@ -1,35 +1,44 @@
 <script>
-    $(document).ready(function () {
-        {% if site.google_scholar_stats_use_cdn %}
-        var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@'
-        {% else %}
-        var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
-        {% endif %}
-        $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json?cb=" + Date.now(), function (data) {
-            var totalCitation = data['citedby']
-            var totalCitationElement = document.getElementById('total_cit');
-            if (totalCitationElement) {
-                var currentUpdated = totalCitationElement.getAttribute('data-updated');
-                var remoteUpdated = data['updated'];
-                var shouldUpdate = !currentUpdated;
-                if (!shouldUpdate && remoteUpdated) {
-                    shouldUpdate = Date.parse(remoteUpdated) >= Date.parse(currentUpdated);
-                }
-                if (shouldUpdate) {
-                    totalCitationElement.textContent = totalCitation;
-                    if (remoteUpdated) {
-                        totalCitationElement.setAttribute('data-updated', remoteUpdated);
-                    }
-                }
+  (function () {
+    if (!window.fetch) return;
+    {% if site.google_scholar_stats_use_cdn %}
+    var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@';
+    {% else %}
+    var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/';
+    {% endif %}
+
+    fetch(gsDataBaseUrl + 'google-scholar-stats/gs_data.json?cb=' + Date.now())
+      .then(function (response) {
+        if (!response.ok) throw new Error('HTTP ' + response.status);
+        return response.json();
+      })
+      .then(function (data) {
+        var totalCitationElement = document.getElementById('total_cit');
+        if (totalCitationElement) {
+          var currentUpdated = totalCitationElement.getAttribute('data-updated');
+          var remoteUpdated = data['updated'];
+          var shouldUpdate = !currentUpdated;
+          if (!shouldUpdate && remoteUpdated) {
+            shouldUpdate = Date.parse(remoteUpdated) >= Date.parse(currentUpdated);
+          }
+          if (shouldUpdate) {
+            totalCitationElement.textContent = data['citedby'];
+            if (remoteUpdated) {
+              totalCitationElement.setAttribute('data-updated', remoteUpdated);
             }
-            var citationEles = document.getElementsByClassName('show_paper_citations')
-            Array.prototype.forEach.call(citationEles, element => {
-                var paperId = element.getAttribute('data')
-                var publication = data['publications'] && data['publications'][paperId]
-                if (publication) {
-                    element.innerHTML = '| Citations: ' + publication['num_citations'];
-                }
-            });
+          }
+        }
+        var citationEles = document.getElementsByClassName('show_paper_citations');
+        Array.prototype.forEach.call(citationEles, function (element) {
+          var paperId = element.getAttribute('data');
+          var publication = data['publications'] && data['publications'][paperId];
+          if (publication) {
+            element.textContent = '| Citations: ' + publication['num_citations'];
+          }
         });
-    })
+      })
+      .catch(function () {
+        // Keep the fallback citation count already in the page.
+      });
+  }());
 </script>

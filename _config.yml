@@ -45,9 +45,6 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
   - node_modules
   - pdf/README.md
   - package.json
@@ -90,12 +87,6 @@ defaults:
       author_profile: true
 
 
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-
 # Outputting
 permalink: /:categories/:title/
 timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -109,10 +100,3 @@ plugins:
   - jekyll-feed
   - jekyll-redirect-from
 
-
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
