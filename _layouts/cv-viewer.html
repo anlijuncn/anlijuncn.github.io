@@ -1,3 +1,7 @@
+---
+layout: compress
+---
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -6,6 +10,8 @@
   </head>
 
   <body class="cv-viewer-body">
+    {% include browser-upgrade.html %}
+
     <main class="cv-viewer-main" aria-label="{{ page.title | default: 'PDF' | escape }}">
       <div
         id="cv-pdf-viewer"

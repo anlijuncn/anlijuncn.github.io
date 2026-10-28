@@ -1,24 +1,7 @@
-# Sidebar links that scroll to a section of the home page (matched by section id)
-sections:
-  - title: "About"
-    section: "about"
-
-  - title: "News"
-    section: "news"
-
-  - title: "Education"
-    section: "education"
-
-  - title: "Publications"
-    section: "publications"
-
-# Sidebar links to other pages
-pages:
+# main links links
+main:
   - title: "CV"
     url: "/cv.html"
 
   - title: "简历"
     url: "/resume.html"
-
-  - title: "小六壬"
-    url: "/liuren/"
