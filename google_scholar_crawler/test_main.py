@@ -1,3 +1,7 @@
+import json
+
+import httpx
+import pytest
 from bs4 import BeautifulSoup
 
 import main
@@ -133,3 +137,85 @@ def test_read_previous_author_falls_back_to_stats_branch(tmp_path, monkeypatch):
     )
 
     assert main.read_previous_author() == {"name": "remote", "citedby": 20}
+
+
+def test_get_text_raises_blocked_error_on_http_429(monkeypatch):
+    monkeypatch.setattr(main, "curl_requests", None)
+
+    with main.ScholarHttpClient() as client:
+        client._httpx_client = httpx.Client(
+            transport=httpx.MockTransport(lambda request: httpx.Response(429))
+        )
+
+        with pytest.raises(main.ScholarBlockedError):
+            client.get_text("https://scholar.google.com/citations")
+
+
+def test_fetch_profile_page_raises_blocked_error_on_challenge():
+    class ChallengeClient:
+        def get_text(self, url):
+            return "<html>Our systems have detected unusual traffic</html>"
+
+    with pytest.raises(main.ScholarBlockedError):
+        main.fetch_profile_page(ChallengeClient(), "La_luGsAAAAJ")
+
+
+def test_fetch_author_with_retries_stops_after_block(monkeypatch):
+    calls = []
+
+    def blocked_fetch(scholar_id, max_publication_pages):
+        calls.append(scholar_id)
+        raise main.ScholarBlockedError("HTTP 429")
+
+    monkeypatch.setattr(main, "fetch_author_once", blocked_fetch)
+    monkeypatch.setattr(main.time, "sleep", lambda seconds: calls.append("slept"))
+
+    with pytest.raises(main.ScholarBlockedError):
+        main.fetch_author_with_retries("La_luGsAAAAJ", max_tries=3)
+
+    assert calls == ["La_luGsAAAAJ"]
+
+
+def test_fetch_author_with_retries_retries_other_errors(monkeypatch):
+    calls = []
+
+    def flaky_fetch(scholar_id, max_publication_pages):
+        calls.append(scholar_id)
+        if len(calls) < 2:
+            raise RuntimeError("timeout")
+        return {"name": "Lijun An"}
+
+    monkeypatch.setattr(main, "fetch_author_once", flaky_fetch)
+    monkeypatch.setattr(main.time, "sleep", lambda seconds: None)
+
+    assert main.fetch_author_with_retries("La_luGsAAAAJ", max_tries=3) == {
+        "name": "Lijun An"
+    }
+    assert len(calls) == 2
+
+
+def test_main_warns_in_actions_when_falling_back(tmp_path, monkeypatch, capsys):
+    def failed_fetch(scholar_id):
+        raise main.ScholarBlockedError("HTTP 429")
+
+    monkeypatch.setenv("GOOGLE_SCHOLAR_ID", "La_luGsAAAAJ")
+    monkeypatch.setenv("GITHUB_ACTIONS", "true")
+    monkeypatch.setattr(main, "RESULTS_DIR", tmp_path)
+    monkeypatch.setattr(main, "GS_DATA_PATH", tmp_path / "gs_data.json")
+    monkeypatch.setattr(main, "SHIELDSIO_PATH", tmp_path / "gs_data_shieldsio.json")
+    monkeypatch.setattr(main, "prepare_author_data", failed_fetch)
+    monkeypatch.setattr(
+        main,
+        "read_previous_author",
+        lambda: {"citedby": 1147, "updated": "2026-10-28T12:43:50+00:00"},
+    )
+
+    main.main()
+
+    stdout = capsys.readouterr().out
+    assert stdout.startswith("::warning title=Google Scholar data is stale::")
+    assert "2026-10-28T12:43:50+00:00" in stdout
+
+    data = json.loads((tmp_path / "gs_data.json").read_text(encoding="utf-8"))
+    assert data["stale"] is True
+    assert data["citedby"] == 1147

@@ -1,7 +1,8 @@
 name: Get Citation Data
 
-on: 
-  page_build: 
+# Not on page_build: every push to main would query Scholar again, and the
+# extra requests are what get the runner rate-limited (HTTP 429).
+on:
   schedule:
     - cron: '0 8 * * 1'
   workflow_dispatch:
@@ -9,7 +10,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 3  # Terminate if it runs longer than 3 minutes
+    # Worst case (3 slow attempts + fallback read) is ~3 minutes plus setup;
+    # leave room so the job falls back to old data instead of being cancelled.
+    timeout-minutes: 6
 
     steps:
     - name: Checkout Repository

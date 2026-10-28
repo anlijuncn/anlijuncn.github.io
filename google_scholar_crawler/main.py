@@ -109,6 +109,10 @@ def is_antibot_response(text: str) -> bool:
     )
 
 
+class ScholarBlockedError(RuntimeError):
+    """Raised when Google Scholar rate-limits or challenges a request."""
+
+
 class ScholarHttpClient:
     """HTTP client with browser impersonation first and plain HTTP fallback."""
 
@@ -176,6 +180,13 @@ class ScholarHttpClient:
             return response.text
         except Exception as exc:
             errors.append(f"httpx: {exc}")
+
+            if (
+                isinstance(exc, httpx.HTTPStatusError)
+                and exc.response.status_code == 429
+            ):
+                raise ScholarBlockedError("; ".join(errors)) from exc
+
             raise RuntimeError("; ".join(errors)) from exc
 
 
@@ -190,7 +201,7 @@ def fetch_profile_page(
     text = client.get_text(url)
 
     if is_antibot_response(text):
-        raise RuntimeError("Google Scholar returned an anti-bot challenge.")
+        raise ScholarBlockedError("Google Scholar returned an anti-bot challenge.")
 
     soup = BeautifulSoup(text, "html.parser")
 
@@ -404,6 +415,8 @@ def fetch_author_with_retries(
 
     Raises
     ------
+    ScholarBlockedError
+        Immediately, without further attempts, if Scholar rate-limits us.
     Exception
         Re-raises the last exception if all attempts fail.
     """
@@ -419,6 +432,12 @@ def fetch_author_with_retries(
                 scholar_id,
                 max_publication_pages=max_publication_pages,
             )
+
+        except ScholarBlockedError as exc:
+            # A rate limit lasts far longer than our retry wait; more requests
+            # only extend it, so give up and fall back to the previous data.
+            log_warn(f"Attempt {attempt} was blocked by Google Scholar: {exc}")
+            raise
 
         except Exception as exc:
             last_exc = exc
@@ -512,6 +531,16 @@ def write_json(path: Path, data: Dict[str, Any], *, indent: Optional[int] = None
         json.dump(data, outfile, ensure_ascii=False, indent=indent)
 
 
+def report_stale_data(message: str) -> None:
+    """Show a warning annotation on the GitHub Actions run page."""
+    if os.environ.get("GITHUB_ACTIONS") != "true":
+        return
+
+    # Workflow commands must stay on one line; see GitHub's escaping rules.
+    escaped = message.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+    print(f"::warning title=Google Scholar data is stale::{escaped}")
+
+
 def get_int_env(name: str, default: int) -> int:
     """Read a positive integer from the environment."""
     raw_value = os.environ.get(name)
@@ -579,6 +608,10 @@ def main() -> None:
             raise SystemExit(1) from exc
 
         log_warn("Using previous Google Scholar JSON data instead.")
+        report_stale_data(
+            f"Fetch failed ({exc}). Republished data last fetched at "
+            f"{previous_author.get('updated', 'an unknown time')}."
+        )
         previous_author["stale"] = True
         previous_author["stale_reason"] = str(exc)
         previous_author["stale_updated"] = utc_now_iso()
