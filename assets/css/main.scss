@@ -277,6 +277,8 @@ h1:before, .anchor:before {
 .news-ticker {
   width: 100%;
   overflow: hidden;
+  padding: 0.6rem 1rem;
+  margin-bottom: 2rem;
   background-color: #f2f2f2;
   border: 1px solid #ccc;
 }
@@ -284,7 +286,7 @@ h1:before, .anchor:before {
 .ticker-wrap {
   display: flex;
   flex-direction: column;
-  height: 3rem;
+  height: 6rem;  /* four lines of news */
   overflow: hidden;
   position: relative;
 }
@@ -486,11 +488,6 @@ body {
 .page__content a.highlight-link:hover {
   color: var(--site-highlight-accent);
   text-decoration: underline;
-}
-
-.visitor-caption {
-  color: var(--site-muted);
-  font-size: 0.9rem;
 }
 
 .greedy-nav a {

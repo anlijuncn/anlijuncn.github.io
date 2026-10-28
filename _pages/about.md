@@ -37,7 +37,6 @@ My research focuses on <span class="highlight highlight-danger">neurodegenerativ
     </div>
   </div>
 </div>
-<br><br>
 
 # 🎓 Education 
 - 2019.01 - 2024.01, Ph.D., National University of Singapore, Singapore. 
@@ -55,16 +54,5 @@ My research focuses on <span class="highlight highlight-danger">neurodegenerativ
 
 - He, T., **An, L.**, Chen, P., Chen, J., Feng, J., ... & Yeo, B. T. (2022). Meta-matching as a simple framework to translate phenotypic predictive models from big to small data. *Nature neuroscience*, 25(6), 795-804. [[PDF]](/pdf/He_2022_NN.pdf) 
 <br><br>
-
-
-----
-<div align="center" style="margin-top: 1em; margin-bottom: 2em;">
-  <div style="width: 30%; min-width: 300px; max-width: 500px;">
-  <script type="text/javascript" id="mapmyvisitors" 
-      src="//mapmyvisitors.com/map.js?d=tcKX-Xhb2sQXUPK_ki20J-QWpVMNo4--me1aIdPeSuc&cl=ffffff&w=a">
-  </script>
-  </div>
-  <p class="visitor-caption">Click the map to see live visitor stats</p>
-</div>
 
   
