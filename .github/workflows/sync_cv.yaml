@@ -1,0 +1,71 @@
+name: Sync CV from Dropbox
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/sync_cv.yaml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: sync-cv
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Download CVs from Dropbox
+      run: |
+        set -euo pipefail
+        # Each line: <Dropbox direct-download URL> <path in repo>
+        while read -r url dest; do
+          [ -z "$url" ] && continue
+          tmp="$(mktemp)"
+          curl -fsSL --retry 3 --retry-delay 5 -o "$tmp" "$url"
+          if [ "$(head -c 4 "$tmp")" != "%PDF" ]; then
+            echo "::error::$url did not return a PDF"
+            exit 1
+          fi
+          mv "$tmp" "$dest"
+          echo "Downloaded $dest ($(wc -c < "$dest") bytes)"
+        done <<'EOF'
+        https://dl.dropboxusercontent.com/scl/fi/erx73avzlibaku5i12318/CV_LijunAn.pdf?rlkey=dki92nfmg04oyjy90zrlohr5o pdf/CV_LijunAn.pdf
+        https://dl.dropboxusercontent.com/scl/fi/zbyxnfy1q6s591i4atgn7/_.pdf?rlkey=zmw4lb2eh5tjf3v187xbvazrz pdf/简历_安丽军.pdf
+        EOF
+
+    - name: Commit and Push Changes
+      id: push
+      run: |
+        set -euo pipefail
+        git add pdf/
+        if git diff --cached --quiet; then
+          echo "CVs unchanged."
+          exit 0
+        fi
+        git config --local user.name "github-actions[bot]"
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git commit -m "Sync CV PDFs from Dropbox"
+        git pull --rebase origin "${GITHUB_REF_NAME}"
+        git push origin "HEAD:${GITHUB_REF_NAME}"
+        echo "changed=true" >> "$GITHUB_OUTPUT"
+
+    - name: Request Pages Build
+      if: steps.push.outputs.changed == 'true'
+      run: |
+        curl -fsS -X POST \
+          -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          -H "Accept: application/vnd.github+json" \
+          "https://api.github.com/repos/${GITHUB_REPOSITORY}/pages/builds" \
+          || echo "::warning::Could not request a Pages build; it will run on the next push."
